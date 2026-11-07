@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>视频完全指南（Vlog 重点课）· 第七课</title>
+<meta name="description" content="富士 X-S20 操作课程第七课：摄像模式与帧率、比特率与编码、F-Log/HLG、视频对焦、音频设置、时间编码、斑纹与稳定器、Vlog 实战配置。插图取自官方说明书。" />
+<link rel="stylesheet" href="../assets/course.css" />
+</head>
+<body>
+<a class="skip" href="#main">跳到课程内容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="lesson-back" href="index.html">
+      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+      <span>返回首页</span>
+    </a>
+    <p class="lesson-kicker">
+      <span class="chapter">第四章 · 视频与工作流</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>第七课</span>
+      <span class="en">Lesson 07</span>
+    </p>
+    <h1 class="lesson-title">视频完全指南（Vlog 重点课）</h1>
+    <p class="lesson-summary">X-S20 的另一半本事。这一课从「按一下就录」一路讲到 F-Log2 与外部录制：摄像模式与帧率怎么选、比特率与编码怎么权衡、音频四通道怎么配、时间编码什么时候需要。最后给出一套能直接用的 Vlog 配置。</p>
+    <dl class="lesson-meta">
+      <div><dt>课时长度</dt><dd>约 120 分钟</dd></div>
+      <div><dt>难度</dt><dd>进阶（视频向）</dd></div>
+      <div><dt>教具</dt><dd>X-S20 · 高速存储卡（V30 以上）·（可选）外接麦克风</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="lesson" id="main">
+  <div class="lesson-body">
+
+    <!-- Ⅰ 本课目标 -->
+    <section class="sec" aria-labelledby="sec-goals">
+      <h3 class="sec-head" id="sec-goals"><span class="mark">Ⅰ</span> 本课目标<span class="note">Objectives</span></h3>
+      <ol class="objectives od-stack">
+        <li class="objective"><span class="idx">01</span><span class="txt">为 Vlog、旅拍、专业交付三种用途分别选对摄像模式、帧率与比特率</span></li>
+        <li class="objective"><span class="idx">02</span><span class="txt">理解 All-I 与 Long GOP、4:2:0 与 4:2:2、8bit 与 10bit 的实际差别</span></li>
+        <li class="objective"><span class="idx">03</span><span class="txt">配置 F-Log / F-Log2 / HLG，并知道各自的 ISO 下限</span></li>
+        <li class="objective"><span class="idx">04</span><span class="txt">调好音频（内置/外接/XLR 四通道）与时间编码</span></li>
+        <li class="objective"><span class="idx">05</span><span class="txt">用斑纹与视频直方图控制高光，用 IBIS+DIS 稳住手持画面</span></li>
+        <li class="objective"><span class="idx">06</span><span class="txt">配出一套「自拍 Vlog」与一套「专业交付」的完整方案</span></li>
+      </ol>
+      <ul class="gear od-cluster" aria-label="本课教具">
+        <li class="tag">X-S20</li>
+        <li class="tag">V30 以上存储卡</li>
+        <li class="tag">（可选）外接麦克风</li>
+        <li class="tag">（可选）耳机</li>
+      </ul>
+    </section>
+
+    <!-- Ⅱ 视频菜单地图 -->
+    <section class="sec" aria-labelledby="sec-map">
+      <h3 class="sec-head" id="sec-map"><span class="mark">Ⅱ</span> 视频有自己的一套菜单<span class="note">Movie Menus</span></h3>
+      <p class="sec-lead">把模式拨盘转到 <b>F（动画）</b> 或 <b>Vlog</b> 后按 MENU/OK，你会看到<b>另一套</b>菜单——照片菜单里的设置在这里完全不生效。这是从索尼/佳能过来最容易困惑的地方。</p>
+
+      <table class="tbl">
+        <thead><tr><th>选项卡</th><th>管什么</th><th>本课位置</th></tr></thead>
+        <tbody>
+          <tr><td><b>B 视频设置</b></td><td>拍摄模式、摄像模式、编码比特率、F-Log、稳定、斑纹、HDMI</td><td>第 Ⅲ–Ⅵ 节</td></tr>
+          <tr><td><b>H 图像质量设置</b></td><td>胶片模拟、白平衡、DR、色调曲线、帧间降噪</td><td>第 Ⅶ 节</td></tr>
+          <tr><td><b>G AF/MF 设置</b></td><td>对焦模式、AF-C 速度/灵敏度、对象检测</td><td>第 Ⅷ 节</td></tr>
+          <tr><td><b>P 音频设置</b></td><td>麦克风音量、风滤镜、低频切除、XLR 四通道</td><td>第 Ⅸ 节</td></tr>
+          <tr><td><b>Q 时间编码设置</b></td><td>时间码显示、计数方式、掉帧、HDMI 输出</td><td>第 Ⅹ 节</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab_mv-movie_x-s20_zhs.png" alt="视频设置菜单" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 1</b> 视频设置选项卡。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/movie_setting/">官方说明书《视频设置（动画录制）》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_movie_mode_x-s20_zhs.png" alt="摄像模式选择界面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 2</b> 摄像模式：先选画面大小/纵横比，再选帧率。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ⅲ 摄像模式与帧率 -->
+    <section class="sec" aria-labelledby="sec-mode">
+      <h3 class="sec-head" id="sec-mode"><span class="mark">Ⅲ</span> 摄像模式、帧率与慢动作<span class="note">Resolution &amp; FPS</span></h3>
+      <p class="sec-lead">路径：<b>视频设置 &gt; 摄像模式</b>。操作顺序是「先上下选画面大小与纵横比 → 按右 → 再选帧率 → MENU/OK」。</p>
+
+      <table class="tbl">
+        <thead><tr><th>规格</th><th>纵横比</th><th>适合</th></tr></thead>
+        <tbody>
+          <tr><td><b>J 6.2K</b></td><td>3:2</td><td>需要裁切余量、或想要 3:2 画幅（可用 6.2K 拍摄后期裁成竖屏）</td></tr>
+          <tr><td><b>V 4K</b></td><td>16:9</td><td>主流交付、B 站/油管</td></tr>
+          <tr><td><b>d 4K</b></td><td>17:9</td><td>电影宽银幕（DCI 4K）</td></tr>
+          <tr><td><b>W 全高清</b></td><td>16:9 / 17:9</td><td>标准全高清</td></tr>
+          <tr><td><b>S 全高清</b></td><td>16:9 / 17:9</td><td><b>可拍更长的连续录制</b>（文件更小、散热压力更低）</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">帧率可选 <b>23.98P / 24P / 25P / 29.97P / 50P / 59.94P</b>，具体取决于所选摄像模式。<b>23.98 / 24</b> 有电影感，<b>25 / 50</b> 对应 PAL 地区灯光（国内拍室内更推荐，避免频闪），<b>29.97 / 59.94</b> 是 NTSC。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">快门与帧率的黄金关系（你已经懂，这里只给数值）</p>
+        <ul>
+          <li>25P → 快门 <b>1/50</b>；50P → 1/100；24P → 1/48 或 1/50。</li>
+          <li>这套「帧率两倍」规则就是所谓的 180° 快门，动作最自然。</li>
+          <li>X-S20 在视频下用 <b>S 或 M 模式</b>（视频设置 &gt; 拍摄模式）才能固定快门。</li>
+        </ul>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 高速录制（慢动作）</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>开启</td><td>开 / 仅限 HDMI 开启 / 关</td><td>「仅限 HDMI 开启」不录像到卡，只输出到外部录像机</td></tr>
+          <tr><td>画面大小</td><td>W 16:9 / W 17:9</td><td>高速录制只支持全高清</td></tr>
+          <tr><td>记录速率</td><td>100P / 120P / 200P / 240P</td><td>越高越慢</td></tr>
+          <tr><td>回放速率</td><td>23.98P–59.94P</td><td>决定最终慢放倍数</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);">高速录制<b>不录音</b>；文件会按所选比特率压缩。<b>240P 记录 + 24P 回放 = 10 倍慢动作</b>，拍水花、鸟飞很好用。</p>
+    </section>
+
+    <!-- Ⅳ 编码与比特率 -->
+    <section class="sec" aria-labelledby="sec-codec">
+      <h3 class="sec-head" id="sec-codec"><span class="mark">Ⅳ</span> 编码与比特率：为什么你的卡会不够快<span class="note">Codec &amp; Bitrate</span></h3>
+      <p class="sec-lead">路径：<b>视频设置 &gt; 媒介录制设定</b>。三个维度：目标位置、文件类型与压缩、比特率。</p>
+
+      <table class="tbl">
+        <thead><tr><th>格式</th><th>帧间压缩</th><th>色度采样</th><th>位深</th><th>特点</th></tr></thead>
+        <tbody>
+          <tr><td>H.264 ALL-I 420 MOV</td><td><b>All-I</b></td><td>4:2:0</td><td>8bit</td><td>兼容性最好，文件大</td></tr>
+          <tr><td>H.264 LongGOP 420 MOV</td><td>Long GOP</td><td>4:2:0</td><td>8bit</td><td>体积与画质平衡</td></tr>
+          <tr><td>H.264 LongGOP 420 MP4</td><td>Long GOP</td><td>4:2:0</td><td>8bit</td><td><b>适合直接上传网络</b></td></tr>
+          <tr><td>H.265 ALL-I 420 MOV</td><td>All-I</td><td>4:2:0</td><td>10bit</td><td>压缩率更高、有 10bit</td></tr>
+          <tr><td>H.265 LongGOP 420 MOV</td><td>Long GOP</td><td>4:2:0</td><td>10bit</td><td>长录制省卡</td></tr>
+          <tr><td><b>H.265 ALL-I 422 MOV</b></td><td>All-I</td><td><b>4:2:2</b></td><td>10bit</td><td>专业交付首选（调色余量最大）</td></tr>
+          <tr><td><b>H.265 LongGOP 422 MOV</b></td><td>Long GOP</td><td><b>4:2:2</b></td><td>10bit</td><td>专业交付 + 长录制</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> All-I 与 Long GOP 到底差在哪</h4>
+      <table class="tbl">
+        <thead><tr><th></th><th>All-I</th><th>Long GOP</th></tr></thead>
+        <tbody>
+          <tr><td>压缩方式</td><td>每一帧独立压缩</td><td>多帧构成一组，只存差异</td></tr>
+          <tr><td>文件大小</td><td><b>大</b></td><td>小</td></tr>
+          <tr><td>剪辑流畅度</td><td><b>好</b>（拖动不卡）</td><td>依赖解码性能</td></tr>
+          <tr><td>适合</td><td>要后期深度处理、要精剪</td><td>长时间录制、直出交付</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">比特率可选 <b>50 / 100 / 200 / 360 Mbps</b>（受高速录制与压缩方式限制）。<b>4:2:2 只在 MOV 下提供</b>；H.264 输出 8bit，其余 10bit。选 4:2:2 10bit 意味着你必须用**更快的卡**，否则录制会中途停止。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">给你三类用途的默认答案</p>
+        <ul>
+          <li><b>自拍 Vlog / 随手记录</b>：4K 25P + H.264 LongGOP 420 MP4 + 100Mbps。<b>卡要求低、直传方便。</b></li>
+          <li><b>旅拍想调色</b>：4K 25P/50P + H.265 LongGOP 422 MOV + 200Mbps。</li>
+          <li><b>专业交付</b>：4K 25P + H.265 <b>ALL-I 422</b> MOV + 360Mbps（或外录 RAW）。</li>
+        </ul>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> HDMI 输出设定</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>HDMI 输出信息展示</td><td>ON / OFF</td><td>外接监视器要不要看到相机屏幕上的信息叠加</td></tr>
+          <tr><td>HDMI 录制控制</td><td>ON / OFF</td><td>按快门时是否向 HDMI 设备发送起止信号（让外录机同步录制）</td></tr>
+          <tr><td>RAW 输出设定</td><td>ATOMOS / Blackmagic / 关</td><td>RAW 只输出到外录机，<b>不存卡</b>；ISO 限制 1000–12800；此时对焦变焦不可用</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Ⅴ F-Log / HLG -->
+    <section class="sec" aria-labelledby="sec-log">
+      <h3 class="sec-head" id="sec-log"><span class="mark">Ⅴ</span> F-Log / F-Log2 / HLG：专业伽马<span class="note">Log &amp; HDR</span></h3>
+      <p class="sec-lead">路径：<b>视频设置 &gt; F-Log/HLG 录制</b>。它同时决定「存到卡里的是什么」和「输出到 HDMI 的是什么」。</p>
+
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>存卡</th><th>HDMI 输出</th><th>ISO 范围</th></tr></thead>
+        <tbody>
+          <tr><td><b>t 胶片模拟</b></td><td>套用胶片模拟</td><td>同卡内</td><td>常规</td></tr>
+          <tr><td><b>u F-Log</b></td><td>F-Log</td><td>F-Log</td><td><b>ISO 640–12800</b></td></tr>
+          <tr><td><b>v F-Log2</b></td><td>F-Log2</td><td><b>套用胶片模拟</b></td><td><b>ISO 1250–12800</b></td></tr>
+          <tr><td><b>w HLG</b></td><td>HLG</td><td>HLG</td><td>ISO 1000–12800</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">F-Log 是什么、什么时候值得用</p>
+        <ul>
+          <li>F-Log / F-Log2 是<b>平缓的宽色域伽马曲线</b>——画面看上去灰、低对比，但保留了最大量的高光与暗部信息，专为后期调色设计。</li>
+          <li>代价：<b>ISO 下限被抬高</b>（F-Log 640、F-Log2 <b>1250</b>），意味着暗光下你必须接受更高的基准噪点。</li>
+          <li>HLG 遵循 ITU-R BT.2100，<b>不是给后期用的</b>，而是在兼容 HLG 的屏幕上直接回放 HDR 效果。</li>
+          <li>v F-Log2 那一档的巧妙之处：<b>卡里存 F-Log2 素材，HDMI 上却输出带胶片模拟的画面</b>——现场监看舒服，素材仍是专业格式。</li>
+        </ul>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">Log 素材在取景时很灰，判断曝光要靠<b>斑纹</b>（第 Ⅵ 节）与波形/直方图，而不是眼睛。若要用「自然实时视图」或「F-Log 查看助手」（在屏幕设置里）可以在监看时套一个近似还原的效果——但那只影响显示，不影响文件。</p>
+    </section>
+
+    <!-- Ⅵ 曝光辅助 -->
+    <section class="sec" aria-labelledby="sec-exp">
+      <h3 class="sec-head" id="sec-exp"><span class="mark">Ⅵ</span> 视频曝光辅助：斑纹、直方图、数据级别<span class="note">Exposure Tools</span></h3>
+      <p class="sec-lead">视频没有 RAW 的容错，回放才发现过曝就晚了。富士给了你三个工具。</p>
+
+      <table class="tbl">
+        <thead><tr><th>工具</th><th>设置</th><th>怎么用</th></tr></thead>
+        <tbody>
+          <tr><td><b>斑纹（Zebra）</b></td><td>斑纹设置：右倾 / 左倾 / 关</td><td>可能过曝的高光被斜条纹覆盖，<b>提前预警</b></td></tr>
+          <tr><td><b>斑纹水平</b></td><td>50–100</td><td>触发条纹的亮度阈值。人像肤色通常设在 <b>70–80</b>；Log 拍摄可设 <b>95+</b> 只在真的接近溢出时提示</td></tr>
+          <tr><td><b>数据级别设置</b></td><td>视频范围 / 全范围</td><td>视频范围（8bit 16–235 / 10bit 64–940）是标准；全范围（0–255）留给特定后期流程</td></tr>
+          <tr><td><b>视频测光</b></td><td>F 测光</td><td>与照片分开存储，需单独设（第 3 课的模式逻辑同样适用）</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">斑纹怎么读</p>
+        <p>条纹出现在<b>脸的高光部分</b>（额头、鼻梁）说明已经到临界，该收一点曝光；出现在窗外的天空、灯泡上是正常的。把阈值调低会「到处都有条纹」，调高则只在真正危险时才出现——先固定一个阈值，再靠经验判断。</p>
+      </div>
+    </section>
+
+    <!-- Ⅶ 视频画质 -->
+    <section class="sec" aria-labelledby="sec-iq">
+      <h3 class="sec-head" id="sec-iq"><span class="mark">Ⅶ</span> 视频画质：与照片分开的一套<span class="note">Movie IQ</span></h3>
+      <p class="sec-lead">路径：<b>图像质量设置（动画录制）</b>。九项里大部分与照片同名，但<b>必须分别设置</b>——这点务必牢记。</p>
+
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>与照片的差别</th></tr></thead>
+        <tbody>
+          <tr><td>F 胶片模拟 / 黑白 / 白平衡 / 色调曲线 / 色彩 / 锐度 / 高 ISO 降噪</td><td>选项相同，但<b>各自独立存储</b></td></tr>
+          <tr><td><b>F 动态范围</b></td><td>视频下<b>没有「自动」</b>；DR200 需 ISO ≥ 320、DR400 需 ISO ≥ 640；只在 F-Log 选「胶片模拟（t）」这一档时可用</td></tr>
+          <tr><td><b>帧间减噪</b></td><td>可选自动 / 关。拍移动主体或相机移动时可能出现「重影」</td></tr>
+          <tr><td><b>F 周边亮度校正</b></td><td>开 / 关；若画面出现条带痕迹请选关</td></tr>
+          <tr><td>x F 转接环设置</td><td>与照片<b>共用</b>一份设置（改一个另一个也变）</td></tr>
+        </tbody>
+      </table>
+
+      <figure class="figure" style="margin-top: var(--s4);">
+        <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab_mv-iq_x-s20_zhs.png" alt="视频图像质量设置选项卡" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 3</b> 视频的图像质量设置选项卡。</figcaption>
+      </figure>
+    </section>
+
+    <!-- Ⅷ 稳定与对焦 -->
+    <section class="sec" aria-labelledby="sec-stab">
+      <h3 class="sec-head" id="sec-stab"><span class="mark">Ⅷ</span> 稳定与对焦：Vlog 的成败点<span class="note">IBIS &amp; AF</span></h3>
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">A</span> 图像稳定</h4>
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>说明</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td><b>IBIS/OIS</b></td><td>机身 + 镜头光学防抖</td><td>常规手持</td></tr>
+          <tr><td><b>IBIS/OIS + DIS</b></td><td>再加数字防抖，会按摄像模式<b>裁切画面</b></td><td>走动拍摄、大幅度晃动</td></tr>
+          <tr><td>关</td><td>屏幕出现 x 图标</td><td>三脚架固定机位</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);"><b>图像稳定模式增能</b>：<b>开</b>适合不转动拍摄（更稳）；<b>关</b>适合摇镜（避免镜头「追不上」）。可以把它指派给功能按钮，在录制中随时切换。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> 视频对焦</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>Vlog 建议</th></tr></thead>
+        <tbody>
+          <tr><td>对焦模式</td><td>AF-C</td></tr>
+          <tr><td>自动对焦模式</td><td>广域/跟踪（自拍走动）；单点（产品、定机位）</td></tr>
+          <tr><td>脸部识别 / 眼睛识别</td><td>开 + 眼睛识别自动</td></tr>
+          <tr><td><b>AF-C 自定设置</b>（视频版）</td><td>追踪灵敏度偏低、速度追踪偏低 → 焦点更「稳」，不会来回呼吸</td></tr>
+          <tr><td>ISO 按钮在视频下</td><td>打开的是<b>视频菜单的 ISO 项</b>，不是照片的</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">Vlog 档的两个专属开关（第 2 课提过，这里说清用途）</p>
+        <ul>
+          <li><b>背景散景模式 = 开</b>：无论你设了什么，光圈固定为最大。自拍时背景更虚、主体更突出。<b>建议同时把拍摄模式设为 P 或 A</b> 以保证曝光连续。</li>
+          <li><b>产品优先模式 = 开</b>：对焦锁定在前景物体上。做开箱、测评时手伸进去也不会跳到手上。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅸ 音频 -->
+    <section class="sec" aria-labelledby="sec-audio">
+      <h3 class="sec-head" id="sec-audio"><span class="mark">Ⅸ</span> 音频设置：比画质更容易翻车<span class="note">Audio</span></h3>
+      <p class="sec-lead">路径：<b>音频设置（动画录制）</b>。视频圈有句话：观众能忍糊画面，但忍不了坏声音。</p>
+
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td>内置麦克风音量调节</td><td>自动 / 手动（25 级）/ 关</td><td>室内固定机位用<b>手动</b>并试录；走动用自动</td></tr>
+          <tr><td>外置麦克风音量调节</td><td>自动 / 手动 / 关</td><td>接了外接麦就把它当主声道</td></tr>
+          <tr><td>麦克风端口设置</td><td>麦克风 / 线路</td><td>接相机麦选「麦克风」；接调音台等线路输出选「线路」</td></tr>
+          <tr><td><b>麦克风音量限制器</b></td><td>开 / 关</td><td><b>建议开</b>：防止突然的大声（笑声、关门）爆音</td></tr>
+          <tr><td><b>风滤镜</b></td><td>开 / 关</td><td>户外必开；但会略损高频</td></tr>
+          <tr><td><b>低频切除滤镜</b></td><td>开 / 关</td><td>减少空调、车流等低频嗡声</td></tr>
+          <tr><td>耳机音量</td><td>0–10</td><td>录制时监听是唯一可靠的判断方式</td></tr>
+          <tr><td>麦克风/遥控快门装置</td><td>麦克风 / 遥控</td><td>插的是快门线就选「遥控」，否则按下会变成录/停</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> XLR 麦克风适配器：四通道</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>麦克风输入通道</td><td>4 通道 XLR + 相机 / 仅限 2 通道 XLR</td><td>前者同时录外接与内置，共四声道</td></tr>
+          <tr><td>4 通道音频监听</td><td>XLR / 相机</td><td>耳机里听哪一路</td></tr>
+          <tr><td>HDMI 4 通道音频输出</td><td>XLR / 相机</td><td>输出给外录机的音频来源</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);">四通道录制<b>只在文件格式为 MOV 时可用</b>。回放时带四声道音频的文件会显示四通道图标。</p>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab_mv-audio_x-s20_zhs.png" alt="音频设置选项卡" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 4</b> 音频设置选项卡。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_connect_mic_x-s20.png" alt="麦克风连接插孔" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 5</b> 麦克风/遥控快门装置连接插孔。</figcaption>
+        </figure>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 时间编码设置</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>什么时候需要</th></tr></thead>
+        <tbody>
+          <tr><td>时间编码显示</td><td>开 / 关</td><td>多机位同步时打开，画面上能看到时间码</td></tr>
+          <tr><td>开始时间设置</td><td>手动输入 / 当前时间 / 重置（00:00:00）</td><td>多机位对齐用手动统一</td></tr>
+          <tr><td><b>计数设置</b></td><td>录制运行 / 自由运行</td><td>录制运行只在录制中计时；<b>自由运行持续走时</b>，多机位首选</td></tr>
+          <tr><td><b>掉帧</b></td><td>开 / 关</td><td>59.94P、29.97P 下让时间码与实际时长严格匹配；23.98P 无法使用</td></tr>
+          <tr><td>HDMI 时间编码输出</td><td>开 / 关</td><td>外录机需要时间码时打开</td></tr>
+        </tbody>
+      </table>
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab_mv-timecode_x-s20_zhs.png" alt="时间编码设置选项卡" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 6</b> 时间编码设置选项卡。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_audio_drop01_x-s20.png" alt="掉帧开关示意" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 7</b> 掉帧开关对时间码显示的影响。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ⅹ Vlog 实战配置 -->
+    <section class="sec" aria-labelledby="sec-vlog">
+      <h3 class="sec-head" id="sec-vlog"><span class="mark">Ⅹ</span> 交付：两套视频方案<span class="note">Recipes</span></h3>
+      <p class="sec-lead">把这一课收成两张表。第一套偏「随手拍好、能直接发」，第二套偏「要调色、要交付」。</p>
+
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>方案 A · 自拍 Vlog</th><th>方案 B · 专业交付</th></tr></thead>
+        <tbody>
+          <tr><td>模式拨盘</td><td><b>Vlog</b></td><td>F（动画）</td></tr>
+          <tr><td>拍摄模式</td><td>P 或 A（保证曝光连续）</td><td>M 或 S（锁快门）</td></tr>
+          <tr><td>摄像模式 / 帧率</td><td>4K 16:9 · 25P</td><td>4K 16:9 · 25P（或 50P 留慢动作）</td></tr>
+          <tr><td>编码 / 比特率</td><td>H.264 LongGOP 420 <b>MP4</b> · 100Mbps</td><td>H.265 <b>ALL-I 422</b> MOV · 200–360Mbps</td></tr>
+          <tr><td>快门</td><td>自动（或 1/50）</td><td><b>1/50 固定</b></td></tr>
+          <tr><td>ISO</td><td>自动3（上限 6400）</td><td>手动 640 起（配 F-Log）</td></tr>
+          <tr><td>F-Log/HLG</td><td>t 胶片模拟</td><td><b>u F-Log</b>（或 v F-Log2 + HDMI 监看）</td></tr>
+          <tr><td>胶片模拟</td><td>ETERNA / ASTIA</td><td>—（Log 下无意义，后期套 LUT）</td></tr>
+          <tr><td>对焦</td><td>AF-C + 广域 + 眼睛识别自动</td><td>AF-C + 单点 / 区；速度灵敏度调低</td></tr>
+          <tr><td>稳定</td><td>IBIS/OIS + DIS（增能开）</td><td>三脚架则关；手持则 IBIS/OIS</td></tr>
+          <tr><td>斑纹</td><td>开，水平 75</td><td>开，水平 <b>95</b></td></tr>
+          <tr><td>音频</td><td>风滤镜开、限制器开、音量自动</td><td>外接麦 + 手动音量 + 试录 + 监听</td></tr>
+          <tr><td>数据级别</td><td>视频范围</td><td>视频范围（除非后期明确要求全范围）</td></tr>
+          <tr><td>存储卡</td><td>V30 起</td><td><b>V60 / V90</b>（ALL-I 422 360Mbps）</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">Vlog 自拍的三个机位习惯</p>
+        <ul>
+          <li><b>屏幕翻转向前</b>，用触摸屏点自己的脸来对焦（触摸屏模式设为「区域」最安全）。</li>
+          <li><b>走动时用 DIS</b>，但要接受画面被裁切；站定讲话时关掉 DIS 更锐。</li>
+          <li>录之前<b>先试录 10 秒并回放听声音</b>——这是覆盖率最高的一条检查。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅺ 迁移提示 -->
+    <section class="sec" aria-labelledby="sec-migrate">
+      <h3 class="sec-head" id="sec-migrate"><span class="mark">Ⅺ</span> 迁移提示<span class="note">From Sony / Canon</span></h3>
+      <div class="callout-box">
+        <p class="callout-title">视频这块，和索尼 / 佳能最不一样的 5 点</p>
+        <ul>
+          <li><b>视频菜单是独立的另一套</b>：胶片模拟、白平衡、DR、对焦参数全部另存。索尼的「照片/视频分别设置」概念相同，但富士连「动态范围自动」都不给视频用。</li>
+          <li><b>三个录制入口</b>（t 按钮 / F 档 / Vlog 档），设定还互相独立。索尼基本是「一个视频模式」。</li>
+          <li><b>Vlog 档是独立的模式位</b>，自带触控设定面板与两个专属开关（背景散景、产品优先）。这在索尼/佳能上没有直接对应物。</li>
+          <li><b>F-Log2 的 ISO 下限 1250</b>：比索尼 S-Log3 的基准（通常 800）更高，暗光下要有心理准备。</li>
+          <li><b>斑纹必须手动开</b>：索尼叫「斑马线」默认可以常开；富士要进「视频设置 &gt; 斑纹设置」显式开启。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅻ 课后练习 -->
+    <section class="sec" aria-labelledby="sec-exercise">
+      <h3 class="sec-head" id="sec-exercise"><span class="mark">Ⅻ</span> 课后练习<span class="note">Exercise</span></h3>
+      <ol class="exercise-list od-stack">
+        <li class="exercise-item">
+          <span class="idx">01</span>
+          <span class="txt">选择：想拍 10 倍慢动作的水花，摄像模式与高速录制怎么设？
+            <details class="answer"><summary>参考答案</summary><p>摄像模式选<b>全高清（W 16:9）</b>——高速录制只支持全高清；「高速录制」设为开，<b>记录 240P、回放 24P</b>，即 10 倍慢放。注意高速录制<b>不录音</b>。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">02</span>
+          <span class="txt">判断：把 F-Log/HLG 录制选为「F-Log2」后，存到卡里的文件和输出到 HDMI 的画面都是 F-Log2。
+            <details class="answer"><summary>参考答案</summary><p>错误。选 <b>v F-Log2</b> 时，<b>卡里存 F-Log2</b>，但 <b>HDMI 输出的是套用了胶片模拟的画面</b>，方便现场监看。另外 F-Log2 的 ISO 下限是 <b>1250</b>。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">03</span>
+          <span class="txt">简答：多机位拍摄时想让三台机器的时间码严格对齐，时间编码设置里最关键的两项是什么？
+            <details class="answer"><summary>参考答案</summary><p>① <b>计数设置选「自由运行」</b>（持续走时，而非只在录制时计时）；② <b>开始时间设置</b>用「手动输入」把各机统一到同一时刻。若帧率为 29.97P / 59.94P，还需把<b>掉帧</b>设为开以匹配实际时长。</p></details>
+          </span>
+        </li>
+      </ol>
+
+      <div class="callout-box">
+        <p class="callout-title">实拍小任务（Vlog 向，15 分钟）</p>
+        <p>用方案 A 拍一段 60 秒的自拍口播：走动 20 秒 + 站定 40 秒。要求：① 走动段开 DIS，站定段关掉；② 全程开斑纹并盯住脸部高光；③ 录完立刻回放，听声音是否爆音、看焦点是否在眼睛上。<b>把这一套存进 C3（视频库）</b>。</p>
+      </div>
+    </section>
+
+    <!-- ⅩⅢ 出处 -->
+    <section class="sec" aria-labelledby="sec-sources">
+      <h3 class="sec-head" id="sec-sources"><span class="mark">ⅩⅢ</span> 出处与延伸<span class="note">Sources</span></h3>
+      <ul class="sources">
+        <li class="group-label">本课对应的官方说明书页面（主教材）</li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/movie_setting/">视频设置（动画录制）</a> <span class="src-note">— 拍摄模式、摄像模式、背景散景、高速录制、自拍、媒介录制设定、HDMI 输出、F-Log/HLG、数据级别、斑纹、稳定、ISO</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/movie_setting_still_photography/">视频设置（静态摄影）</a> <span class="src-note">— 照片模式下可预设的视频项</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/image_quality_setting_movie/">图像质量设置（动画录制）</a> <span class="src-note">— 视频版胶片模拟/白平衡/DR/色调曲线/帧间减噪</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/af_mf_setting_movie/">AF/MF 设置（动画录制）</a> <span class="src-note">— 视频对焦参数</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/audio_setting/">音频设置（动画录制）</a> <span class="src-note">— 麦克风音量、风滤镜、低频切除、耳机、XLR 四通道</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/time_code_setting/">时间编码设置（动画录制）</a> <span class="src-note">— 时间码显示、计数设置、掉帧、HDMI 输出</span></li>
+        <li class="group-label">版权说明</li>
+        <li class="src-note">本课插图均取自 FUJIFILM 官方在线说明书，© FUJIFILM Corporation，仅用于个人学习。</li>
+      </ul>
+      <div class="callout-box">
+        <p class="callout-title">学习提醒</p>
+        <p>下一课转向「把相机调成你顺手的样子」：设置菜单六大项、我的菜单/Q 菜单/Fn 键三个快捷系统，以及手机传图、网络摄像头、连线拍摄等连接工作流。</p>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="课时切换">
+      <a class="pager-btn" href="0006-huazhi-jiaopian-moniz.html">
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <span>
+          <span class="pager-label">上一课</span>
+          <span class="pager-title">第六课 · 画质与风格：胶片模拟与拍摄菜单</span>
+        </span>
+      </a>
+      <a class="pager-btn" href="0008-caidan-lianjie.html">
+        <span>
+          <span class="pager-label">下一课</span>
+          <span class="pager-title">第八课 · 菜单深度自定义与连接工作流</span>
+        </span>
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </a>
+    </nav>
+  </div>
+</main>
+
+<footer class="page-foot">
+  <div class="page-foot-inner">
+    <span class="mono">X-S20 · Operation Course · Lesson 07</span>
+    <span>内容依据富士官方在线说明书整理；插图 © FUJIFILM Corporation，仅用于个人学习。</span>
+  </div>
+</footer>
+
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

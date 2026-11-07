@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>菜单深度自定义与连接工作流 · 第八课</title>
+<meta name="description" content="富士 X-S20 操作课程第八课：设置菜单六大项、我的菜单/Q菜单/Fn键三个快捷系统、蓝牙传图、USB 读卡器、网络摄像头、连线拍摄、Frame.io、RAW 处理与设定备份。插图取自官方说明书。" />
+<link rel="stylesheet" href="../assets/course.css" />
+</head>
+<body>
+<a class="skip" href="#main">跳到课程内容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="lesson-back" href="index.html">
+      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+      <span>返回首页</span>
+    </a>
+    <p class="lesson-kicker">
+      <span class="chapter">第四章 · 视频与工作流</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>第八课</span>
+      <span class="en">Lesson 08</span>
+    </p>
+    <h1 class="lesson-title">菜单深度自定义与连接工作流</h1>
+    <p class="lesson-summary">这一课做两件事：把相机调成「你的相机」，再把照片送到该去的地方。前者是设置菜单 + 我的菜单/Q 菜单/Fn 键三大快捷系统；后者是手机传图、USB 读卡、网络摄像头、连线拍摄与设定备份。</p>
+    <dl class="lesson-meta">
+      <div><dt>课时长度</dt><dd>约 120 分钟</dd></div>
+      <div><dt>难度</dt><dd>进阶</dd></div>
+      <div><dt>教具</dt><dd>X-S20 · 智能手机（装 FUJIFILM XApp）· USB-C 线 · 计算机</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="lesson" id="main">
+  <div class="lesson-body">
+
+    <!-- Ⅰ 本课目标 -->
+    <section class="sec" aria-labelledby="sec-goals">
+      <h3 class="sec-head" id="sec-goals"><span class="mark">Ⅰ</span> 本课目标<span class="note">Objectives</span></h3>
+      <ol class="objectives od-stack">
+        <li class="objective"><span class="idx">01</span><span class="txt">过一遍设置菜单六大项，改掉那些「一开始就该改」的默认值</span></li>
+        <li class="objective"><span class="idx">02</span><span class="txt">把最常用的 16 项塞进「我的菜单」，10 项放进 Q 菜单</span></li>
+        <li class="objective"><span class="idx">03</span><span class="txt">掌握 Fn 按钮的指派方法（含按住 DISP/BACK 的快捷入口）</span></li>
+        <li class="objective"><span class="idx">04</span><span class="txt">用蓝牙配对手机，跑通「拍完即传」</span></li>
+        <li class="objective"><span class="idx">05</span><span class="txt">用 USB 连电脑：读卡器、网络摄像头、连线拍摄三种模式</span></li>
+        <li class="objective"><span class="idx">06</span><span class="txt">用 X Acquire 备份设定，用 X RAW STUDIO 借用机身引擎处理 RAW</span></li>
+      </ol>
+      <ul class="gear od-cluster" aria-label="本课教具">
+        <li class="tag">X-S20</li>
+        <li class="tag">智能手机 + FUJIFILM XApp</li>
+        <li class="tag">USB-C 线</li>
+        <li class="tag">计算机</li>
+      </ul>
+    </section>
+
+    <!-- Ⅱ 设置菜单 -->
+    <section class="sec" aria-labelledby="sec-setup">
+      <h3 class="sec-head" id="sec-setup"><span class="mark">Ⅱ</span> 设置菜单：六个子菜单，改完更顺手<span class="note">Setup Menu</span></h3>
+      <p class="sec-lead">设置菜单是 <b>D 选项卡</b>，下面分六块：用户设置、按键音设置、屏幕设置、按钮/拨盘设置、电源管理、保存数据设置。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">A</span> 用户设置（13 项）</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>用途 / 建议</th></tr></thead>
+        <tbody>
+          <tr><td><b>格式化</b></td><td>新卡第一件事。<b>受保护照片也会被删除</b>；格式化期间别开电池盖</td></tr>
+          <tr><td>区域设定 / 日期时间 / 时差</td><td>出行前设好时差；<b>时差只切换时钟显示，不改文件时间戳之外的设定</b></td></tr>
+          <tr><td>语言（Q P）</td><td>简体中文</td></tr>
+          <tr><td>我的菜单设置（照片 / 视频）</td><td>编辑 E 选项卡，最多 <b>16 项</b></td></tr>
+          <tr><td><b>传感器清洁</b></td><td>执行 / 开启时 / 关闭时。开机会多耗几秒，但能减少落灰</td></tr>
+          <tr><td><b>电池寿命</b></td><td>0–4 的数字，越高越旧。数值大就该换电池了</td></tr>
+          <tr><td><b>按键音和闪光</b></td><td>选「关闭」可一次性禁掉扬声器、闪光灯、辅助灯与自拍灯（教堂、会议、拍鸟）</td></tr>
+          <tr><td>固件升级</td><td>见第 9 课</td></tr>
+          <tr><td><b>重设所有</b></td><td>静态菜单重置 / 视频菜单重置 / 设置重置 / 初始化。注意初始化会清掉自定义白平衡之外的一切</td></tr>
+          <tr><td>调节</td><td>查看型号与认证信息</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> 屏幕设置（24 项，挑最要紧的）</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>为什么值得改</th></tr></thead>
+        <tbody>
+          <tr><td><b>VIEW MODE 设置</b></td><td>眼传感器 / 仅 EVF / 仅 LCD / 限 EVF。翻转屏自拍时建议「仅 LCD」</td></tr>
+          <tr><td>EVF / LCD 亮度、色彩</td><td>亮度可选「自动」，色彩按偏好微调</td></tr>
+          <tr><td><b>自动旋转显示屏</b></td><td>竖拍时显示是否跟着转</td></tr>
+          <tr><td><b>手动模式下预览曝光/白平衡</b></td><td>第 3 课讲过：M 档想让屏幕反映真实曝光就开；用闪光灯时别开</td></tr>
+          <tr><td><b>自然实时视图</b></td><td>关掉可看到胶片模拟、白平衡等效果的实时预览；想「所见即所得」就关掉它</td></tr>
+          <tr><td>F-Log 查看助手</td><td>拍 Log 时给一个近似还原的监看效果（不影响文件）</td></tr>
+          <tr><td><b>电子水平仪设定</b></td><td>显示 2D / 3D 水平线，风光构图必开</td></tr>
+          <tr><td>取景框</td><td>九宫格 / 24 格，风光三分法很实用</td></tr>
+          <tr><td><b>自动旋转回放</b></td><td>竖拍照片回放时自动转正（配合第 2 课「图像旋转」）</td></tr>
+          <tr><td>对焦距离指示单位</td><td>米 / 英尺</td></tr>
+          <tr><td><b>显示自定义设置</b></td><td>决定屏幕上出现哪些指示（含对焦距离指示）</td></tr>
+          <tr><td>大尺寸指示器模式（EVF / LCD）</td><td>把关键数值放大，适合戴眼镜或强光下</td></tr>
+          <tr><td>位置信息</td><td>显示手机同步来的地理标记</td></tr>
+          <tr><td>Q 菜单背景</td><td>透明 / 背景色</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_info_big_off_lcd_x-s20.png" alt="标准尺寸指示器" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 1</b> 标准指示器。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/screen_set-up/">官方说明书《屏幕设置》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_info_big_on_lcd_x-s20.png" alt="大尺寸指示器模式" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 2</b> 大尺寸指示器：关键数值放大。</figcaption>
+        </figure>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">C</span> 按钮/拨盘设置（17 项，自定义的核心）</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项与建议</th></tr></thead>
+        <tbody>
+          <tr><td><b>对焦杆设置</b></td><td>中央按下：关 / 编辑对焦区域 / 变焦 / 重置到中心；俯仰：关 / 直接 AF 点选择 / 编辑对焦区域</td></tr>
+          <tr><td>编辑/保存快捷菜单（照片 / 视频）</td><td>改 Q 菜单里放什么</td></tr>
+          <tr><td><b>功能(Fn)设定</b></td><td>给 6 个功能按钮改指派（第 Ⅳ 节详述）</td></tr>
+          <tr><td>电动变焦镜头功能(Fn)设定</td><td>带 Fn 键的电动变焦镜头</td></tr>
+          <tr><td><b>命令转盘设定</b></td><td>改前/后指令拨盘在 S / A / M 下各管什么（第 3 课那张表的底层）</td></tr>
+          <tr><td>命令拨盘方向</td><td>反转旋转方向（顺时针=加大 还是 减小）</td></tr>
+          <tr><td><b>快门 AF / 快门 AE</b></td><td>关掉快门 AE 可让连拍每张重新测光（第 5 课）</td></tr>
+          <tr><td>无镜头拍摄 / 无卡拍摄</td><td>转接环玩老镜头时可能要用；日常关着更安全</td></tr>
+          <tr><td><b>镜头变焦/对焦设定</b></td><td>反转对焦环方向、变焦环方向</td></tr>
+          <tr><td><b>AE/AF-LOCK 设定</b></td><td>按住锁定 / 开关切换（第 3 课）</td></tr>
+          <tr><td>AWB 锁定模式</td><td>白平衡锁定方式</td></tr>
+          <tr><td><b>ISO 按钮设定</b></td><td>可改为「选择和智能手机传输指令」等</td></tr>
+          <tr><td><b>触摸屏设置</b></td><td>开 / 关触控，及相关子项（第 4 课）</td></tr>
+          <tr><td>功能锁定</td><td>锁定部分按钮防误触</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">D</span> 电源管理 · 按键音 · 保存数据</h4>
+      <table class="tbl">
+        <thead><tr><th>子菜单</th><th>项目</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="4"><b>电源管理</b></td><td>自动关机</td><td>5 / 2 / 1 分钟、30 / 15 秒、关。风光等云时设长一点</td></tr>
+          <tr><td><b>性能</b></td><td>增强 / 普通 / 节能。增强提升对焦与取景性能但更费电</td></tr>
+          <tr><td>EVF/LCD 增能设置</td><td>弱光优先 / 分辨率优先 / EVF 帧率优先(100P)</td></tr>
+          <tr><td><b>高温自动关机选项</b></td><td>标准 / 高。选「高」能延长录制，但<b>长时间接触机身可能低温灼伤</b>，建议上三脚架</td></tr>
+          <tr><td rowspan="2"><b>按键音设置</b></td><td>各类音量</td><td>AF 嘟嘟声、自拍、操作音、录制起止音、电子快门音量与音色、回放音</td></tr>
+          <tr><td>四通道音频播放</td><td>四声道文件的回放方式</td></tr>
+          <tr><td rowspan="5"><b>保存数据设置</b></td><td><b>画面计数规则</b></td><td>连续 / 清零。选连续可减少重名文件</td></tr>
+          <tr><td><b>编辑文件名</b></td><td>sRGB 用 4 位字母（默认 DSCF），Adobe RGB 用 _ + 3 位字母</td></tr>
+          <tr><td>选择文件夹</td><td>选择或新建（5 位字符）文件夹</td></tr>
+          <tr><td><b>版权信息</b></td><td>写入 Exif 的作者与版权，只影响之后拍的照片</td></tr>
+          <tr><td>地理标记</td><td>手机同步位置写入 Exif</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">拿到相机先改这 6 项（省掉以后无数麻烦）</p>
+        <ul>
+          <li><b>画面计数规则 → 连续</b>（避免多卡重名）</li>
+          <li><b>版权信息</b>填上你的名字</li>
+          <li><b>自动旋转回放 → 开</b>（竖拍不用手动转）</li>
+          <li><b>电子水平仪 → 2D 开</b>（风光构图）</li>
+          <li><b>性能 → 增强</b>（除非你整天在外没电充）</li>
+          <li><b>按键音和闪光 → 关闭</b>做一个快捷入口（拍鸟、会议用）</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅲ 我的菜单 -->
+    <section class="sec" aria-labelledby="sec-mymenu">
+      <h3 class="sec-head" id="sec-mymenu"><span class="mark">Ⅲ</span> 我的菜单：把 16 项常用塞进一页<span class="note">My Menu</span></h3>
+      <p class="sec-lead">E 选项卡（我的菜单）默认是空的，只有你添加过项目后才出现。它适合放「改得不频繁但每次都要翻很久」的项目。</p>
+
+      <div class="steps-widget">
+        <ol class="steps od-stack" id="step-list">
+          <li class="step" id="step-1">
+            <label class="step-main" for="step-1">
+              <input class="step-input" type="checkbox" id="step-1" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">01</span>
+              <span class="step-body">
+                <span class="step-title">进入编辑入口</span>
+                <span class="step-text">设置菜单 &gt; 用户设置 &gt; <b>我的菜单设置</b>（照片用 x，视频用 F，两者分开）。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-2">
+            <label class="step-main" for="step-2">
+              <input class="step-input" type="checkbox" id="step-2" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">02</span>
+              <span class="step-body">
+                <span class="step-title">增加项目</span>
+                <span class="step-text">选「增加项目」→ MENU/OK。<b>可以加进来的选项会用蓝色高亮</b>；已在菜单里的带勾选标记。选一个位置并确认。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-3">
+            <label class="step-main" for="step-3">
+              <input class="step-input" type="checkbox" id="step-3" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">03</span>
+              <span class="step-body">
+                <span class="step-title">排序与删除</span>
+                <span class="step-text">用「<b>排列项目</b>」拖动顺序（把最常用的放前面），用「<b>删除项目</b>」移除。上限 <b>16 项</b>。</span>
+              </span>
+            </label>
+          </li>
+        </ol>
+        <div class="steps-progress">
+          <p class="progress-count"><span class="progress-hint">步骤进度</span><span class="val">0 / 3 步</span></p>
+          <div class="progress-track" aria-hidden="true"><span class="progress-fill"></span></div>
+          <p class="steps-done" hidden>全部步骤已标记完成。</p>
+        </div>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">推荐放进去的内容（风光相）：<b>传感器清洁 · 格式化 · 间隔定时拍摄 · 快门类型 · 防抖模式 · 减少闪烁 · 显示自定义设置 · 电子水平仪设定 · 自动旋转回放 · 版权信息 · 画面计数规则 · 固件升级 · 电池寿命 · 保存数据设置</b>。你会发现它们都属于「偶尔改一次，但每次都要翻三层」。</p>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_my_tab01_x-s20_zhs.png" alt="我的菜单选项卡" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 3</b> 我的菜单（E 选项卡）。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/shortcuts/my_menu/">官方说明书《我的菜单》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_su_my01_x-s20_zhs.png" alt="我的菜单设置界面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 4</b> 我的菜单设置：增加 / 排列 / 删除。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ⅳ Q 菜单与 Fn -->
+    <section class="sec" aria-labelledby="sec-qmenu">
+      <h3 class="sec-head" id="sec-qmenu"><span class="mark">Ⅳ</span> Q 菜单与 Fn 键：两个「快」系统<span class="note">Q Menu &amp; Fn</span></h3>
+
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">A</span> Q 菜单（按 Q 呼出）</h4>
+      <table class="tbl">
+        <thead><tr><th>操作</th><th>结果</th></tr></thead>
+        <tbody>
+          <tr><td>按 <b>Q</b></td><td>呼出快速菜单（照片与视频两套不同内容）</td></tr>
+          <tr><td>对焦棒选项目 + 后指令拨盘转</td><td>改设定</td></tr>
+          <tr><td><b>按住 Q</b></td><td>跳到「编辑/保存快捷菜单」，改 Q 菜单里放什么</td></tr>
+          <tr><td>再按 Q</td><td>退出</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);">照片 Q 菜单默认 16 项：拍摄模式、对焦模式、自动对焦模式、动态范围、高 ISO 降噪、图像尺寸、图像质量、胶片模拟、高光色调、阴影色调、色彩、锐度、自拍、脸部识别/眼睛识别、对象检测、EVF/LCD 亮度。<b>视频 Q 菜单默认 8 项</b>：拍摄模式、S.S.（视频优化控制）、视频分辨率、白平衡、胶片模拟、ISO、帧率、白平衡色温。</p>
+      <p class="sec-lead">想禁用 Q 按钮：按钮/拨盘设置 &gt; 功能(Fn)设定 &gt; <b>Q 按钮设定 → 无</b>。也可以把 Q 的功能指给别的功能键。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> Fn 键（6 个物理按钮 + 拨盘 + 触摸手势）</h4>
+      <table class="tbl">
+        <thead><tr><th>按钮</th><th>出厂默认</th></tr></thead>
+        <tbody>
+          <tr><td>A t（动画录制）按钮</td><td>视频录制释放</td></tr>
+          <tr><td>B ISO 按钮</td><td>ISO</td></tr>
+          <tr><td>C Q（快速菜单）按钮</td><td>快捷菜单</td></tr>
+          <tr><td>D Fn 按钮</td><td>白平衡</td></tr>
+          <tr><td>E AEL 按钮</td><td>仅限 AE 锁</td></tr>
+          <tr><td>F AFON 按钮</td><td>AF-ON</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">最快改 Fn 的方法：按住 DISP/BACK</p>
+        <p>在任何拍摄界面<b>按住 DISP/BACK 不放</b>，会直接弹出「功能按钮指派」对话框 → 选按钮 → 选功能。不用进菜单三层。同样的指派也可以在「按钮/拨盘设置 &gt; 功能(Fn)设定」里做。</p>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">除了 6 个按钮，还可以指派给：<b>Fn 拨盘</b>（出厂是胶片模拟）、<b>触摸功能动作</b> T-Fn1–T-Fn4（在屏幕上四向轻拨）、<b>镜头功能按钮</b>（部分镜头有）。这套系统叫「功能控制」。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_q_x-s20.png" alt="Q 按钮位置" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 5</b> Q 按钮。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/shortcuts/quick_menu/">官方说明书《快速菜单》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_q_x-s20_zhs.png" alt="Q 菜单界面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 6</b> Q 菜单：一屏放下最常用的参数。</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout-box">
+        <p class="callout-title">我建议这样改（风光 + Vlog 双修）</p>
+        <ul>
+          <li><b>Fn 按钮 → 对焦模式</b>（第 4 课说过它在菜单深处，最该有快捷键）</li>
+          <li><b>ISO 按钮 → 保留 ISO</b></li>
+          <li><b>Q 按钮 → 保留快捷菜单</b></li>
+          <li><b>Fn 拨盘 → 保留胶片模拟</b>（富士最舒服的创作节奏）</li>
+          <li><b>AEL → 保留 AE 锁</b>；<b>AFON → 改「仅限 AF 锁」</b>（第 3 课）</li>
+          <li>把一个触摸手势（T-Fn1）设为<b>斑纹开关</b>，Vlog 时随手开关</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅴ 连接总览 -->
+    <section class="sec" aria-labelledby="sec-conn">
+      <h3 class="sec-head" id="sec-conn"><span class="mark">Ⅴ</span> 连接总览：七种把照片送出去的方式<span class="note">Connections</span></h3>
+      <table class="tbl">
+        <thead><tr><th>功能</th><th>怎么连</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td><b>智能手机 App（蓝牙）</b></td><td>蓝牙配对 → 传图时自动切 Wi-Fi</td><td>外拍即时分享、手机遥控</td></tr>
+          <tr><td><b>USB 读卡器</b></td><td>USB 线接手机或电脑</td><td>没有读卡器时的应急传原图</td></tr>
+          <tr><td><b>网络摄像头</b></td><td>USB 接电脑</td><td>直播、会议</td></tr>
+          <tr><td><b>连线拍摄（Tether）</b></td><td>USB 或无线局域网</td><td>棚拍、静物，电脑直接收图</td></tr>
+          <tr><td><b>上传至 Frame.io</b></td><td>无线局域网</td><td>团队远程审片（Camera to Cloud）</td></tr>
+          <tr><td><b>RAW 处理（X RAW STUDIO）</b></td><td>USB</td><td>用机身引擎在电脑上处理 RAW</td></tr>
+          <tr><td><b>保存和载入设定（X Acquire）</b></td><td>USB</td><td>备份/恢复整套相机设定</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s4);">指示灯也能表达连接状态：<b>闪烁红色</b>等状态用于表示 Frame.io 等设备的连接情况（完整状态见第 1 课那张表与官方《纵览》）。</p>
+    </section>
+
+    <!-- Ⅵ 手机配对 -->
+    <section class="sec" aria-labelledby="sec-phone">
+      <h3 class="sec-head" id="sec-phone"><span class="mark">Ⅵ</span> 手机配对：一次做好，长期受用<span class="note">Bluetooth</span></h3>
+      <p class="sec-lead">前提：手机上装好 FUJIFILM XApp（或旧版 Camera Remote）。然后在<b>拍摄模式</b>下按 <b>x（蓝牙）按钮</b>。</p>
+
+      <div class="steps-widget">
+        <ol class="steps od-stack" id="step-list">
+          <li class="step" id="step-1">
+            <label class="step-main" for="step-1">
+              <input class="step-input" type="checkbox" id="step-1" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">01</span>
+              <span class="step-body">
+                <span class="step-title">进入配对</span>
+                <span class="step-text">按 x（蓝牙）按钮 → 高亮「<b>蓝牙</b>」→ MENU/OK → 高亮「<b>配对</b>」→ MENU/OK。<br><span style="color:var(--muted);">（在回放时<b>按住</b> x 按钮也能直接跳到这一步。）</span></span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-2">
+            <label class="step-main" for="step-2">
+              <input class="step-input" type="checkbox" id="step-2" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">02</span>
+              <span class="step-body">
+                <span class="step-title">在手机上确认代码</span>
+                <span class="step-text">打开 App 与相机配对，两边会各显示一个代码。<b>确认两个代码一致</b>再确认——不一致就是配错了设备。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-3">
+            <label class="step-main" for="step-3">
+              <input class="step-input" type="checkbox" id="step-3" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">03</span>
+              <span class="step-body">
+                <span class="step-title">确认连接成功</span>
+                <span class="step-text">相机屏幕上出现<b>智能手机图标 + 白色蓝牙图标</b>即成功。之后 App 一启动就会自动连接。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-4">
+            <label class="step-main" for="step-4">
+              <input class="step-input" type="checkbox" id="step-4" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">04</span>
+              <span class="step-body">
+                <span class="step-title">打开「拍完即传」与压缩</span>
+                <span class="step-text">网络/USB 设置 &gt; 蓝牙/智能手机设置：<b>自动图像传输指令 → 开</b>（拍完自动上传）；<b>调整为智能手机用图像大小 → 开</b>（压缩上传，卡内原图不受影响，但只对 L 尺寸照片有效）。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-5">
+            <label class="step-main" for="step-5">
+              <input class="step-input" type="checkbox" id="step-5" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">05</span>
+              <span class="step-body">
+                <span class="step-title">（可选）关机也保持连接</span>
+                <span class="step-text">把「<b>关闭电源时连接</b>」与「<b>断电时的图像传输</b>」设为开，关机状态下也能继续传图，甚至可以用手机把相机唤醒拍摄。</span>
+              </span>
+            </label>
+          </li>
+        </ol>
+        <div class="steps-progress">
+          <p class="progress-count"><span class="progress-hint">步骤进度</span><span class="val">0 / 5 步</span></p>
+          <div class="progress-track" aria-hidden="true"><span class="progress-fill"></span></div>
+          <p class="steps-done" hidden>全部步骤已标记完成。</p>
+        </div>
+      </div>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_su_connect_bluetooth_01_x-s20_zhs.png" alt="蓝牙连接菜单" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 7</b> 蓝牙连接菜单。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/usage_smartphone_app/">官方说明书《连接智能手机（蓝牙）》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_su_connect_bluetooth_02_x-s20_zhs.png" alt="配对代码确认" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 8</b> 配对：两边代码必须一致。</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout-box">
+        <p class="callout-title">三个省电与稳定性要点</p>
+        <ul>
+          <li>不用蓝牙时<b>关掉 Bluetooth 开/关</b>，省电明显。</li>
+          <li>无线频率可选 <b>2.4GHz 或 5GHz</b>；5GHz 更快但部分国家/地区限制室外使用某些频段。传大文件优先 5GHz。</li>
+          <li>「飞行模式」可一次性关掉 Wi-Fi 与蓝牙——飞机上、需要绝对安静时用。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅶ USB 三种模式 -->
+    <section class="sec" aria-labelledby="sec-usb">
+      <h3 class="sec-head" id="sec-usb"><span class="mark">Ⅶ</span> USB 三模式：读卡器 / 网络摄像头 / 连线拍摄<span class="note">USB Modes</span></h3>
+      <p class="sec-lead">关键在于「<b>网络/USB 设置 &gt; 连接模式</b>」选哪个。选错了表现就是「连上了但没反应」。</p>
+
+      <table class="tbl">
+        <thead><tr><th>连接模式</th><th>用途</th><th>前置设置</th></tr></thead>
+        <tbody>
+          <tr><td><b>USB 读卡器</b></td><td>把相机当读卡器，复制照片到电脑或手机</td><td>USB 电源/通讯设置 = 自动 或 电源关/通信开</td></tr>
+          <tr><td><b>USB 网络相机</b></td><td>当网络摄像头直播</td><td>同上；然后用 USB 线连电脑并开机，在直播软件里选相机</td></tr>
+          <tr><td><b>USB TETHER 自动拍摄</b></td><td>连线拍摄；电脑关闭时自动退回存卡</td><td>配合 Lightroom + Tether 插件 / X Acquire / Capture One</td></tr>
+          <tr><td><b>USB TETHER 拍摄固定</b></td><td>连线拍摄；断线后仍保持连线模式</td><td>注意：断线后<b>不会存卡</b>，拍不到东西</td></tr>
+          <tr><td><b>USB RAW 转换/备份恢复</b></td><td>X RAW STUDIO 处理 RAW；X Acquire 备份/恢复设定</td><td>同一模式服务两个软件</td></tr>
+          <tr><td><b>无线 TETHER 拍摄固定</b></td><td>通过无线局域网连线拍摄</td><td>先在「网络设置」连上 Wi-Fi</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">USB 供电/设置</p>
+        <p>这个选项决定 USB 是「供电」还是「通信」优先。<b>要传数据就必须让它能通信</b>（自动 / 电源关·通信开）；若你只想要边拍边充电，可以选只供电。找不到「不显示电源图标」的原因，多半就是这里设错了。</p>
+      </div>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_connect-pc02_x-s20.png" alt="USB 连接计算机" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 9</b> USB 连接计算机示意。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_otg_android_type-c.png" alt="Android Type-C 连接" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 10</b> 手机 OTG 连接（Type-C / iOS 各有接法）。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ⅷ Frame.io 与网络 -->
+    <section class="sec" aria-labelledby="sec-net">
+      <h3 class="sec-head" id="sec-net"><span class="mark">Ⅷ</span> 网络设置与 Frame.io<span class="note">Network</span></h3>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>要点</th></tr></thead>
+        <tbody>
+          <tr><td><b>接入点设置</b></td><td>简单设置（WPS 式）/ 手动设置（从列表选 或 输入 SSID）</td></tr>
+          <tr><td><b>IP 地址设置</b></td><td>自动 / 手动（IP、子网掩码、网关、DNS）</td></tr>
+          <tr><td><b>Frame.io Camera to Cloud</b></td><td>连接 / 断开 / <b>获取配对码</b>（在 Frame.io 网页端输入此码即连上）/ 选择文件类型</td></tr>
+          <tr><td>重置无线设置</td><td>把所有无线相关设定清空，排查连接问题时用</td></tr>
+          <tr><td>信息</td><td>查看 MAC、固件等网络信息</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">Frame.io 适合谁</p>
+        <p>它解决的是「片子还在卡里，客户/导演就要看」的问题——相机通过 Wi-Fi 直接把代理文件传到云端项目。个人用户可能一年用不上，但如果你接商单、团队协作，这是 X-S20 少见的「专业工作流」功能。</p>
+      </div>
+    </section>
+
+    <!-- Ⅸ 迁移提示 -->
+    <section class="sec" aria-labelledby="sec-migrate">
+      <h3 class="sec-head" id="sec-migrate"><span class="mark">Ⅸ</span> 迁移提示<span class="note">From Sony / Canon</span></h3>
+      <div class="callout-box">
+        <p class="callout-title">自定义与连接，和索尼 / 佳能最不一样的 5 点</p>
+        <ul>
+          <li><b>三个快捷系统并存</b>：我的菜单（深层项目）、Q 菜单（常用参数）、Fn 键（单项直达）。索尼只有 Fn 菜单 + 我的菜单，富士多了一个「我的菜单最多 16 项」的独立页面。</li>
+          <li><b>按住 DISP/BACK 直接改 Fn</b>：这是富士的隐藏捷径，索尼要进菜单。</li>
+          <li><b>Fn 拨盘可以指派</b>：不只是一个物理拨盘，还能改成任意功能。</li>
+          <li><b>连接模式的「选一个」逻辑</b>：读卡器 / 网络摄像头 / Tether / RAW 转换 是<b>互斥</b>的，必须手动切换。索尼多数是插上自动识别。</li>
+          <li><b>X Acquire 备份设定</b>：换机、升级固件前备份整套配置。索尼有 Save/Load Settings，但富士这个可以跨机型部分迁移。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅹ 课后练习 -->
+    <section class="sec" aria-labelledby="sec-exercise">
+      <h3 class="sec-head" id="sec-exercise"><span class="mark">Ⅹ</span> 课后练习<span class="note">Exercise</span></h3>
+      <ol class="exercise-list od-stack">
+        <li class="exercise-item">
+          <span class="idx">01</span>
+          <span class="txt">简答：不改菜单的情况下，最快的「给某个按钮换功能」的操作是什么？
+            <details class="answer"><summary>参考答案</summary><p>在拍摄界面<b>按住 DISP/BACK 不放</b>，直接弹出功能按钮指派对话框 → 选按钮 → 选功能。也可走「按钮/拨盘设置 &gt; 功能(Fn)设定」。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">02</span>
+          <span class="txt">判断：把「连接模式」设为「USB TETHER 拍摄固定」后，即使拔掉 USB 线，相机也会把照片存在卡里。
+            <details class="answer"><summary>参考答案</summary><p>错误。选「拍摄固定」时断开连接，相机<b>仍以连线模式运作，不会记录任何照片</b>。想要断线自动存卡，应选「USB TETHER 自动拍摄」。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">03</span>
+          <span class="txt">选择：想用手机在拍摄现场即时收到刚拍的照片，最少要做对哪两件事？
+            <details class="answer"><summary>参考答案</summary><p>① 完成<b>蓝牙配对</b>（相机 x 按钮 → 蓝牙 → 配对，双向代码一致）；② 在网络/USB 设置里把「<b>自动图像传输指令</b>」设为开（可同时开「调整为智能手机用图像大小」压缩上传）。</p></details>
+          </span>
+        </li>
+      </ol>
+
+      <div class="callout-box">
+        <p class="callout-title">实操任务（一次做完，终身受用）</p>
+        <p>① 把「我的菜单」填满你选的 12–16 项并按使用频率排序；② 把 Fn 按钮改为「对焦模式」；③ 用 X Acquire 备份一次设定到电脑（这是你的「后悔药」）。做完这三件，你的 X-S20 才算真正属于你。</p>
+      </div>
+    </section>
+
+    <!-- Ⅺ 出处 -->
+    <section class="sec" aria-labelledby="sec-sources">
+      <h3 class="sec-head" id="sec-sources"><span class="mark">Ⅺ</span> 出处与延伸<span class="note">Sources</span></h3>
+      <ul class="sources">
+        <li class="group-label">本课对应的官方说明书页面（主教材）</li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/user_setting/">用户设置</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/sound_set-up/">按键音设置</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/screen_set-up/">屏幕设置</a> <span class="src-note">— 设置菜单前半</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/button-dial_setting/">按钮/拨盘设置</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/power_management/">电源管理</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_setup/save_data_set-up/">保存数据设置</a> <span class="src-note">— 设置菜单后半</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/shortcuts/shortcut_options/">快捷选项</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/shortcuts/my_menu/">我的菜单</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/shortcuts/quick_menu/">快速菜单</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/shortcuts/function_buttons/">功能控制</a> <span class="src-note">— 三个快捷系统与 Fn 指派</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/overview/">纵览</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/usage_smartphone_app/">连接智能手机（蓝牙）</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/usage_usb/">连接智能手机（USB）</a> <span class="src-note">— 连接能力与手机配对</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/webcam/">将相机用作网络摄像头</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/tethere/">连线拍摄</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/frameio_upload/">上传文件至 Frame.io</a> <span class="src-note">— USB 三模式与云端上传</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/raw/">RAW 处理</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/save_load_setting/">保存和载入设定</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/connections/network_usb_menu/">网络/USB 设定菜单</a> <span class="src-note">— X RAW STUDIO / X Acquire / 网络设定</span></li>
+        <li class="group-label">版权说明</li>
+        <li class="src-note">本课插图均取自 FUJIFILM 官方在线说明书，© FUJIFILM Corporation，仅用于个人学习。</li>
+      </ul>
+      <div class="callout-box">
+        <p class="callout-title">学习提醒</p>
+        <p>最后一课收尾：镜头、闪光灯、散热器怎么选，相机怎么保养，固件怎么升，出问题怎么查。学完那课，这本「说明书」你就真正读完了。</p>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="课时切换">
+      <a class="pager-btn" href="0007-shipin-wanzheng-zhinan.html">
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <span>
+          <span class="pager-label">上一课</span>
+          <span class="pager-title">第七课 · 视频完全指南（Vlog 重点课）</span>
+        </span>
+      </a>
+      <a class="pager-btn" href="0009-peijian-baoyang-guzhang.html">
+        <span>
+          <span class="pager-label">下一课</span>
+          <span class="pager-title">第九课 · 配件、保养与故障排除</span>
+        </span>
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </a>
+    </nav>
+  </div>
+</main>
+
+<footer class="page-foot">
+  <div class="page-foot-inner">
+    <span class="mono">X-S20 · Operation Course · Lesson 08</span>
+    <span>内容依据富士官方在线说明书整理；插图 © FUJIFILM Corporation，仅用于个人学习。</span>
+  </div>
+</footer>
+
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

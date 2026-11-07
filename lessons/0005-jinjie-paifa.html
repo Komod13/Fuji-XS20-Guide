@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>进阶拍摄技法：风光利器与闪光 · 第五课</title>
+<meta name="description" content="富士 X-S20 操作课程第五课：驱动模式、包围曝光、连拍与预拍摄、HDR、全景、多重曝光、闪光摄影与闪光设置。插图取自官方说明书。" />
+<link rel="stylesheet" href="../assets/course.css" />
+</head>
+<body>
+<a class="skip" href="#main">跳到课程内容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="lesson-back" href="index.html">
+      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+      <span>返回首页</span>
+    </a>
+    <p class="lesson-kicker">
+      <span class="chapter">第三章 · 曝光与色彩</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>第五课</span>
+      <span class="en">Lesson 05</span>
+    </p>
+    <h1 class="lesson-title">进阶拍摄技法：风光利器与闪光</h1>
+    <p class="lesson-summary">这一课把「驱动按钮」这一个入口彻底讲透：包围曝光、连拍与预拍摄、HDR、全景、多重曝光全都在里面。最后补上人像用得上的内置闪光灯与闪光设置菜单。学完你能独立完成一张 HDR、一张全景、一组 AE 包围和一张闪光人像。</p>
+    <dl class="lesson-meta">
+      <div><dt>课时长度</dt><dd>约 90 分钟</dd></div>
+      <div><dt>难度</dt><dd>进阶</dd></div>
+      <div><dt>教具</dt><dd>X-S20 · 三脚架（强烈建议）· 可拍的人</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="lesson" id="main">
+  <div class="lesson-body">
+
+    <!-- Ⅰ 本课目标 -->
+    <section class="sec" aria-labelledby="sec-goals">
+      <h3 class="sec-head" id="sec-goals"><span class="mark">Ⅰ</span> 本课目标<span class="note">Objectives</span></h3>
+      <ol class="objectives od-stack">
+        <li class="objective"><span class="idx">01</span><span class="txt">说出驱动模式菜单里的每一个选项，并知道哪些不在这个菜单里</span></li>
+        <li class="objective"><span class="idx">02</span><span class="txt">会用 AE 包围、胶片模拟包围、ISO/白平衡包围、对焦包围四类包围</span></li>
+        <li class="objective"><span class="idx">03</span><span class="txt">会用 CH / CL 连拍与预拍摄抓拍，理解机械与电子快门的取舍</span></li>
+        <li class="objective"><span class="idx">04</span><span class="txt">独立完成 HDR、全景、多重曝光的拍摄与失败排查</span></li>
+        <li class="objective"><span class="idx">05</span><span class="txt">会用内置闪光做 TTL 补光，理解慢同步、同步速度与闪光补偿</span></li>
+      </ol>
+      <ul class="gear od-cluster" aria-label="本课教具">
+        <li class="tag">X-S20</li>
+        <li class="tag">三脚架</li>
+        <li class="tag">可拍的人（或玩偶）</li>
+        <li class="tag">（可选）外接闪光灯</li>
+      </ul>
+    </section>
+
+    <!-- Ⅱ 驱动模式总览 -->
+    <section class="sec" aria-labelledby="sec-drive">
+      <h3 class="sec-head" id="sec-drive"><span class="mark">Ⅱ</span> 驱动模式：一个按钮装下五种武器<span class="note">Drive Mode</span></h3>
+      <p class="sec-lead">按下 <b>驱动按钮</b>（拨盘上标 s/C/H 的那颗）弹出驱动模式菜单，用对焦棒上下选项目、左右选细分选项、MENU/OK 确认。</p>
+
+      <figure class="figure">
+        <div class="img-frame"><img src="../assets/images/ill_bd_up_button_drive_x-s20.png" alt="驱动按钮位置" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 1</b> 驱动按钮（图示为各机型通用标注）。</figcaption>
+      </figure>
+
+      <table class="tbl">
+        <thead><tr><th>菜单项</th><th>做什么</th><th>本课位置</th></tr></thead>
+        <tbody>
+          <tr><td>单幅画面</td><td>常规逐张拍摄（默认）</td><td>—</td></tr>
+          <tr><td><b>CH 高速连拍 / CL 低速连拍</b></td><td>按住快门连续拍摄</td><td>第 Ⅳ 节</td></tr>
+          <tr><td><b>W ISO BKT / V 白平衡 BKT / s 包围</b></td><td>三种包围曝光</td><td>第 Ⅲ 节</td></tr>
+          <tr><td><b>HDR</b></td><td>曝光 3 次合成一张</td><td>第 Ⅴ 节</td></tr>
+          <tr><td><b>全景</b></td><td>连续摇摄拼成全景</td><td>第 Ⅵ 节</td></tr>
+          <tr><td><b>多重曝光</b></td><td>多张合成，最多 9 次</td><td>第 Ⅶ 节</td></tr>
+          <tr><td><b>像素偏移多重拍摄</b></td><td>（机型支持时）可通过多张位移合成提升分辨率</td><td>第 Ⅸ 节说明</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">注意：包围的细分选项在「拍摄设置」里</p>
+        <p>驱动菜单里选中的只是<b>哪一类</b>包围；真正的张数、步长、顺序要到「<b>拍摄设置</b>」菜单里设置——AE 连拍设置、胶片模拟包围、对焦包围设定。这两处配合才完整，第 Ⅲ 节会逐项说。</p>
+      </div>
+    </section>
+
+    <!-- Ⅲ 包围 -->
+    <section class="sec" aria-labelledby="sec-bkt">
+      <h3 class="sec-head" id="sec-bkt"><span class="mark">Ⅲ</span> 五种包围：一次快门，多个版本<span class="note">Bracketing</span></h3>
+      <p class="sec-lead">包围的本质是「按一次快门自动产出多张不同设定」。风光用得最多的是 AE 包围与对焦包围，人像偶尔用胶片模拟包围试色。</p>
+
+      <table class="tbl">
+        <thead><tr><th>类型</th><th>每次快门产出</th><th>细分设置在哪</th><th>典型用途</th></tr></thead>
+        <tbody>
+          <tr><td><b>O 自动曝光包围（AE）</b></td><td>按设定张数拍，第一张用测光值，其余按包围量增减曝</td><td>拍摄设置 &gt; AE 连拍设置</td><td>风光高反差备素材，后期合成 HDR</td></tr>
+          <tr><td>X 胶片模拟包围</td><td>1 张原片 + 按不同胶片模拟生成的副本</td><td>拍摄设置 &gt; 胶片模拟包围（选 3 种）</td><td>人像挑色彩倾向，不用反复改设置</td></tr>
+          <tr><td>Y 动态范围包围</td><td>3 张：DR100% / DR200% / DR400%</td><td>—</td><td>判断这台相机在你的场景能保留多少高光</td></tr>
+          <tr><td><b>Z 对焦包围</b></td><td>一系列焦点逐步前移的照片</td><td>拍摄设置 &gt; 对焦包围设定（手动 / 自动）</td><td>微距景深合成、前景到远景全清晰</td></tr>
+          <tr><td>W ISO 包围 / V 白平衡包围</td><td>±1/3 ~ ±1 的 ISO 三张 / ±1 ~ ±3 的白平衡三张</td><td>驱动菜单里直接选</td><td>测试可接受的高感上限 / 白平衡容差</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">A</span> AE 连拍设置：张数、步长、顺序</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>可选</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>画面（张数）</td><td>按机型可选项设定</td><td>一次快门拍多少张</td></tr>
+          <tr><td>步骤（步长）</td><td>通常 1/3、2/3、1 EV 等</td><td>每张之间曝光差多少</td></tr>
+          <tr><td>1帧 / 连续</td><td>1帧 = 逐张按；连续 = 单次连拍跑完</td><td>上三脚架拍风景用「连续」更快</td></tr>
+          <tr><td>序列设置</td><td>0 → − → + 等顺序</td><td>决定哪张是你「正常」那张</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s4);">注意：<b>无论包围量设多大，曝光都不会超过测光系统的极限</b>。另外动态范围包围期间感光度会被锁在最低 ISO 640，结束后恢复。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> 对焦包围：手动与自动两套逻辑</h4>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_focus_bkt_a_x-s20_zhs.png" alt="对焦包围手动设置" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 2</b> 手动：自己定「画面 / 步骤 / 间隔」。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_focus_bkt_b_x-s20_zhs.png" alt="对焦包围自动设置" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 3</b> 自动：相机自己算张数与步长。</figcaption>
+        </figure>
+      </div>
+      <table class="tbl" style="margin-top: var(--s4);">
+        <thead><tr><th>模式</th><th>怎么操作</th><th>要点</th></tr></thead>
+        <tbody>
+          <tr><td><b>手动</b></td><td>设定「画面（张数）」「步骤（每次对焦改变量）」「间隔」后开拍</td><td>步骤越小变化越细；<b>到无穷远即自动结束</b>，画面数只是上限</td></tr>
+          <tr><td><b>自动</b></td><td>先对焦到<b>最近端</b>按 MENU/OK 标记 A，再对焦到<b>最远端</b>按 DISP/BACK 标记 B，然后按快门</td><td>相机会算出所需张数并显示；可反过来先从最远端开始</td></tr>
+        </tbody>
+      </table>
+      <div class="callout-box">
+        <p class="callout-title">对焦包围的三条铁律</p>
+        <ul>
+          <li><b>切勿在拍摄过程中变焦</b>——一变焦全部作废。</li>
+          <li><b>强烈建议三脚架</b>；手持几乎必然失败。</li>
+          <li>拍完后需要在后期做景深合成（叠加）。相机本身只负责拍，不负责合。</li>
+        </ul>
+      </div>
+
+      <figure class="figure" style="margin-top: var(--s5);">
+        <div class="img-frame"><img src="../assets/images/osd_mn_sm_focus_bkt_x-s20_zhs.png" alt="对焦包围拍摄示意" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 4</b> 对焦包围的对焦距离设定界面（官方插图）。</figcaption>
+      </figure>
+    </section>
+
+    <!-- Ⅳ 连拍与预拍摄 -->
+    <section class="sec" aria-labelledby="sec-cont">
+      <h3 class="sec-head" id="sec-cont"><span class="mark">Ⅳ</span> 连拍与预拍摄：抓住按下快门之前<span class="note">Continuous</span></h3>
+      <p class="sec-lead">驱动菜单里选 <b>CH 高速连拍</b> 或 <b>CL 低速连拍</b>，再选画面速率，按住快门即连拍；松开或卡满即结束。</p>
+
+      <table class="tbl">
+        <thead><tr><th>要点</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>高速率的前提</td><td>只有「拍摄设置 &gt; 快门类型」选为<b>电子快门</b>时才能用最高速率</td></tr>
+          <tr><td>每张都重新对焦</td><td>对焦模式选 <b>AF-C</b></td></tr>
+          <tr><td>每张都重新测光</td><td>把「按钮/拨盘设置 &gt; <b>快门 AE</b>」设为 <b>OFF</b></td></tr>
+          <tr><td>文件编号溢出</td><td>连拍中编号到 9999 会新建文件夹继续存</td></tr>
+          <tr><td>速率会掉</td><td>张数变多、光线变差、快门变慢时速率可能下降，属正常</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 预拍摄（Pre-shot）：把时滞变成优势</h4>
+      <p class="sec-lead">「拍摄设置 &gt; <b>预拍摄</b>」设为开后，半按快门时相机就用电子快门一直拍、一直丢，<b>只在你完全按下快门之前的瞬间开始保留</b>——这是拍飞鸟起飞、孩子笑出来的关键功能。</p>
+      <div class="callout-box">
+        <p class="callout-title">预拍摄的三个条件</p>
+        <ul>
+          <li>只在 <b>CH 高速连拍 + 电子快门</b> 下可用。</li>
+          <li><b>闪光灯摄影被禁用</b>。</li>
+          <li>电子快门的通病同时存在：移动主体可能畸变、荧光灯下有横纹、无法使用闪光。</li>
+        </ul>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 机械快门 vs 电子快门</h4>
+      <table class="tbl">
+        <thead><tr><th></th><th>t 机械快门</th><th>s 电子快门</th><th>u 机械 + 电子</th></tr></thead>
+        <tbody>
+          <tr><td>声音</td><td>有</td><td><b>静音</b></td><td>按环境自动选</td></tr>
+          <tr><td>高速连拍</td><td>受限</td><td><b>可用最高速率</b></td><td>视情况</td></tr>
+          <tr><td>闪光灯</td><td>可用</td><td><b>不可用</b></td><td>视情况</td></tr>
+          <tr><td>移动主体畸变</td><td>无</td><td><b>可能有</b></td><td>视情况</td></tr>
+          <tr><td>荧光灯横纹</td><td>较少</td><td><b>可能出现</b></td><td>视情况</td></tr>
+          <tr><td>长时间曝光降噪</td><td>有效</td><td><b>不起作用</b></td><td>视情况</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s4);">电子快门时感光度会被限制在 ISO 160–12800。用静音快门拍人时，请尊重被摄者的肖像权与隐私——声音消失不等于别人不知道你在拍。</p>
+    </section>
+
+    <!-- Ⅴ HDR -->
+    <section class="sec" aria-labelledby="sec-hdr">
+      <h3 class="sec-head" id="sec-hdr"><span class="mark">Ⅴ</span> HDR：一次快门跑完三次曝光<span class="note">HDR</span></h3>
+      <p class="sec-lead">驱动菜单选 <b>HDR</b> → 选动态范围档位 → 按快门。相机会曝光 3 次并<b>机内合成</b>成一张，高光与阴影细节都保留。</p>
+
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>HDR AUTO</td><td>动态范围自动取 200%–800% 之间的值</td></tr>
+          <tr><td>HDR200 / 400 / 800</td><td>固定动态范围</td></tr>
+          <tr><td>HDR800+</td><td>相机自行调整以把动态范围拉到最大</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">HDR 的四个副作用（拍之前先知道）</p>
+        <ul>
+          <li>照片会被<b>轻微裁切</b>，分辨率略降。</li>
+          <li>曝光期间<b>保持相机稳固</b>；主体移动、光线变化都会毁掉合成。</li>
+          <li>高值档位<b>可能出现斑点</b>（噪点），别一味选 800。</li>
+          <li><b>闪光灯不闪光</b>；不支持扩展感光度（L/H）。</li>
+        </ul>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">回放时 HDR 照片带 <b>t 图标</b>，一眼能认出来。它与第 Ⅲ 节的「AE 包围」区别在于：<b>HDR 是机内合成好一张；AE 包围给你多张 RAW/JPEG 留给后期</b>。要交片、要快 → HDR；要保留最大后期空间 → AE 包围。</p>
+    </section>
+
+    <!-- Ⅵ 全景 -->
+    <section class="sec" aria-labelledby="sec-pano">
+      <h3 class="sec-head" id="sec-pano"><span class="mark">Ⅵ</span> 全景：摇一圈，别摇歪<span class="note">Panorama</span></h3>
+      <p class="sec-lead">驱动菜单选 <b>全景</b> → 左右按对焦棒选<b>角度大小</b> → 向右按选<b>摇摄方向</b> → 完全按下快门（<b>不用一直按着</b>）→ 按屏幕箭头方向匀速转相机，到引导线末端自动结束。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_panorama01_x-s20_zhs.png" alt="全景拍摄界面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 5</b> 全景拍摄：引导线与方向箭头。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/panorama/">官方说明书《全景照片》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_selector-d_x-s20.png" alt="对焦棒左右方向选择" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 6</b> 用对焦棒左右选择角度与方向。</figcaption>
+        </figure>
+      </div>
+
+      <table class="tbl">
+        <thead><tr><th>维度</th><th>该怎么做</th></tr></thead>
+        <tbody>
+          <tr><td>姿势</td><td>双肘抵住身体两侧；用三脚架最好</td></tr>
+          <tr><td>速度</td><td><b>匀速、缓慢</b>，以小圆圈轨迹转动（不是左右平移）</td></tr>
+          <tr><td>方向</td><td>严格沿引导线方向，反向会直接取消拍摄</td></tr>
+          <tr><td>水平</td><td>保持相机与水平线平行或垂直，别一边转一边俯仰</td></tr>
+          <tr><td>焦距</td><td>35 mm 以下（等效 50 mm 以下）</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">全景最容易失败的五种场景</p>
+        <ul>
+          <li><b>移动的主体</b>（行人、车流）——拼接会错位</li>
+          <li><b>贴近相机的物体</b>——视差导致接缝</li>
+          <li><b>毫无变化的画面</b>（纯天空、草地）——相机找不到拼接点</li>
+          <li><b>持续运动的景物</b>（波浪、瀑布）</li>
+          <li><b>亮度剧变</b>的场景——注意「快门 AE」为 ON 时，<b>整张全景的曝光由第一张画面决定</b>，所以起手第一格要选亮度适中的位置</li>
+        </ul>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">回放全景：全画面显示时<b>向下按对焦棒</b>开始滚动播放，左右按对焦棒可手动滚动，后指令拨盘可放大缩小。若在完成前再次全按快门，拍摄会提前结束且可能不保存。</p>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_pb_panorama01_x-s20_zhs.png" alt="全景回放界面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 7</b> 全景回放（官方插图）。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_pb_panorama02_x-s20_zhs.png" alt="全景回放滚动" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 8</b> 用对焦棒控制滚动与暂停。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ⅶ 多重曝光 -->
+    <section class="sec" aria-labelledby="sec-multi">
+      <h3 class="sec-head" id="sec-multi"><span class="mark">Ⅶ</span> 多重曝光：一加一大于二<span class="note">Multiple Exposure</span></h3>
+      <p class="sec-lead">驱动菜单选 <b>多重曝光</b> → 选合成模式 → 拍第一张 → MENU/OK 继续 → 拍第二张 → DISP/BACK 结束合成。最多叠加 <b>9 次曝光</b>。</p>
+
+      <table class="tbl">
+        <thead><tr><th>合成模式</th><th>算法</th><th>风光玩法</th></tr></thead>
+        <tbody>
+          <tr><td><b>叠加</b></td><td>曝光直接相加</td><td>月亮叠在建筑上；需相应降低曝光补偿</td></tr>
+          <tr><td><b>平均</b></td><td>自动优化整体曝光</td><td>同构图多次曝光（云、人流），背景曝光最稳</td></tr>
+          <tr><td><b>明亮</b></td><td>每个位置取<b>最亮</b>像素</td><td>星轨、烟花叠加、光绘</td></tr>
+          <tr><td><b>暗</b></td><td>每个位置取<b>最暗</b>像素</td><td>去掉画面的亮部元素，做诡异效果</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_multi-exp01_x-s20_zhs.png" alt="多重曝光拍摄第一张" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 9</b> 第一张拍摄后的叠加预览。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_multi-exp03_x-s20_zhs.png" alt="多重曝光合成模式选择" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 10</b> 选择合成模式与曝光次数。</figcaption>
+        </figure>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s5);">按键规则：拍完一张按 <b>MENU/OK</b> 进入下一张；<b>向左按对焦棒</b>可以回退重拍上一张；<b>DISP/BACK</b> 结束并用当前素材合成。上一张的照片会以半透明方式叠在取景画面上当构图参考——这是多重曝光最实用的部分。</p>
+
+      <figure class="figure">
+        <div class="img-frame"><img src="../assets/images/exa_muliti-exp.png" alt="多重曝光效果示例" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 11</b> 多重曝光的合成效果示例（官方插图）。</figcaption>
+      </figure>
+    </section>
+
+    <!-- Ⅷ 闪光 -->
+    <section class="sec" aria-labelledby="sec-flash">
+      <h3 class="sec-head" id="sec-flash"><span class="mark">Ⅷ</span> 闪光：人像补光的最小可用方案<span class="note">Flash</span></h3>
+      <p class="sec-lead">X-S20 的内置闪光灯要<b>手动升起</b>：滑动机身上的 N 杆，闪光灯弹出。升不起来就不会闪——这是最常见的「闪光灯坏了」误会。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_flash-in_x-s20.png" alt="升起内置闪光灯" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 12</b> 滑动 N 杆升起内置闪光灯。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/flash/">官方说明书《闪光灯摄影》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_flash_supplied_x-s20_zhs.png" alt="内置闪光灯功能设置" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 13</b> 闪光设置 &gt; 闪光灯功能设置（内置闪光灯）。</figcaption>
+        </figure>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">A</span> 闪光控制模式与输出</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>含义</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="4">闪光控制模式</td><td><b>TTL</b></td><td>自动测光决定输出，可再调闪光灯补偿——<b>补光首选</b></td></tr>
+          <tr><td><b>M</b></td><td>手动定输出，1/1 至 1/64；稳定可复现，但要试拍</td></tr>
+          <tr><td><b>C 主闪光灯</b></td><td>把机顶灯当指令器控制离机闪光（影棚系统）</td></tr>
+          <tr><td><b>D 关</b></td><td>闪光灯不闪光</td></tr>
+          <tr><td>闪光灯补偿 / 输出</td><td>按上项不同而变</td><td>TTL 下调补偿；M 下调输出比值</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> 闪光灯模式（TTL 下）</h4>
+      <table class="tbl">
+        <thead><tr><th>模式</th><th>行为</th><th>人像用途</th></tr></thead>
+        <tbody>
+          <tr><td><b>E 自动闪光</b></td><td>需要时才闪，亮度自动调整；半按时显示 p 图标=会闪</td><td>日常补光，最省心</td></tr>
+          <tr><td><b>F 标准</b></td><td>每次都闪（充满电才闪）</td><td>逆光人像强制补光</td></tr>
+          <tr><td><b>G 慢同步</b></td><td>闪光 + 慢速快门组合</td><td><b>夜景人像</b>：既照亮人，又保留背景灯光</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">C</span> 同步与红眼</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>同步</td><td>H 第一幕（默认）/ I 第二幕</td><td>第二幕在快门关闭前闪，拖影会出现在主体<b>后面</b>，更自然</td></tr>
+          <tr><td>红眼修正</td><td>闪光灯 / 关</td><td>需在「闪光设置 &gt; 红眼修正」开启；仅 TTL 下有效</td></tr>
+          <tr><td>同步速度</td><td colspan="2">闪光灯与 <b>1/180 秒或更慢</b>的快门同步。S / M 档用闪光时，快门必须慢于 1/180 s</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">闪光人像：四个立刻能用的原则</p>
+        <ul>
+          <li><b>白天逆光补光</b>：TTL + 标准模式 + 闪光补偿 −1/3 ~ −2/3 EV，让人脸亮起来又不显「打闪光」。</li>
+          <li><b>夜景人像</b>：TTL + <b>慢同步</b>，快门放慢到 1/15–1/30 s，人物与背景同时有光。</li>
+          <li><b>不要用电子快门</b>——闪光灯不工作。</li>
+          <li><b>镜头可能挡出阴影</b>：长镜头或遮光罩会在画面下缘投影，拍前用广角端试一张。</li>
+        </ul>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s5);">闪光设置菜单里还有几项值得知道：<b>TTL-锁定模式</b>（锁定上一次闪光 / 锁定计量闪光，让多张效果一致）、<b>LED 灯光设置</b>（外接灯的常亮灯作反射光或 AF 辅助）、<b>控制单元设置</b>（光学无线分组 Gr A/B/C）。这些在你有外接闪光灯时再深入。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_flash_supplied_num_x-s20_zhs.png" alt="闪光补偿数值" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 14</b> 闪光灯补偿 / 输出调节。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab-flash2_x-s20_zhs.png" alt="闪光设置选项卡" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 15</b> 闪光设置选项卡全项。</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout-box">
+        <p class="callout-title">两条安全提示</p>
+        <ul>
+          <li>切勿使用在相机热靴上施加<b>超过 300 V 电压</b>的第三方闪光灯，会损坏机身。</li>
+          <li>TTL 模式下每次拍照闪光灯可能<b>多次预闪</b>，拍完前别动相机。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅸ 迁移提示 -->
+    <section class="sec" aria-labelledby="sec-migrate">
+      <h3 class="sec-head" id="sec-migrate"><span class="mark">Ⅸ</span> 迁移提示<span class="note">From Sony / Canon</span></h3>
+      <div class="callout-box">
+        <p class="callout-title">进阶技法，和索尼 / 佳能最不一样的 5 点</p>
+        <ul>
+          <li><b>一切都在「驱动按钮」里</b>：包围、连拍、HDR、全景、多重曝光共用同一个入口。索尼是分散在连拍拨盘 + 菜单里，佳能是 DRIVE 键 + HDR 菜单。</li>
+          <li><b>包围的细分在另一个菜单</b>：驱动菜单选类型，「拍摄设置」定张数步长——两处配合，第一次用容易只改了其一。</li>
+          <li><b>HDR 是机内合成的一张</b>，带 t 图标；索尼的 HDR 也机内合成，但很多机型只给 3 档、没有 800+。</li>
+          <li><b>预拍摄绑定电子快门 + CH</b>：这是富士少数比索尼更「运动向」的功能，抓飞鸟起飞很好用。</li>
+          <li><b>内置闪光要手动弹起</b>：索尼多数机型内置灯是按钮弹出或没有；富士靠滑动 N 杆，不弹就不闪。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅹ 课后练习 -->
+    <section class="sec" aria-labelledby="sec-exercise">
+      <h3 class="sec-head" id="sec-exercise"><span class="mark">Ⅹ</span> 课后练习<span class="note">Exercise</span></h3>
+      <ol class="exercise-list od-stack">
+        <li class="exercise-item">
+          <span class="idx">01</span>
+          <span class="txt">简答：想在同一个高反差风光场景拿到 3 张不同曝光的素材留给后期合成，用哪个功能？张数与步长在哪里设？
+            <details class="answer"><summary>参考答案</summary><p>用<b>自动曝光包围（AE 包围）</b>：驱动菜单里选「s 包围 &gt; O 自动曝光包围」，然后到「<b>拍摄设置 &gt; AE 连拍设置</b>」设定画面（张数）、步骤（步长）、1帧/连续与序列设置。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">02</span>
+          <span class="txt">判断：把「预拍摄」设为开，在任何驱动模式下都能拍到按下快门之前的画面。
+            <details class="answer"><summary>参考答案</summary><p>错误。预拍摄仅当驱动模式为 <b>CH 高速连拍</b>且快门类型选为<b>电子快门</b>时可用；且此时禁用闪光灯摄影。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">03</span>
+          <span class="txt">选择：夜晚在街头拍人像，希望人物被照亮同时背景灯光不过暗，闪光设置怎么选？
+            <details class="answer"><summary>参考答案</summary><p>升起内置闪光灯 → TTL 闪光控制模式 → 闪光灯模式选 <b>G 慢同步</b>，并让快门慢到 1/15–1/30 s 左右（S/M 档须慢于 1/180 s）；必要时微调闪光补偿。</p></details>
+          </span>
+        </li>
+      </ol>
+
+      <div class="callout-box">
+        <p class="callout-title">实拍小任务（风光向，一次做两件）</p>
+        <p>上三脚架，对同一场景：① 用 <b>HDR400</b> 拍一张；② 用 <b>AE 包围</b>拍一组 3 张。回来后对比「机内合成」与「三张素材」的差别，感受后期空间。再加一个 180° 的<b>全景</b>，练匀速摇摄。</p>
+      </div>
+    </section>
+
+    <!-- Ⅺ 出处与延伸 -->
+    <section class="sec" aria-labelledby="sec-sources">
+      <h3 class="sec-head" id="sec-sources"><span class="mark">Ⅺ</span> 出处与延伸<span class="note">Sources</span></h3>
+      <ul class="sources">
+        <li class="group-label">本课对应的官方说明书页面（主教材）</li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/bracketing/">包围</a> <span class="src-note">— ISO BKT、白平衡 BKT、AE 包围、胶片模拟包围、动态范围包围、对焦包围（手动/自动）</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/continuous/">连拍（连续拍摄模式）</a> <span class="src-note">— CH/CL、对焦与曝光的连拍行为</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/hdr/">HDR</a> <span class="src-note">— HDR AUTO/200/400/800/800+ 与使用限制</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/panorama/">全景照片</a> <span class="src-note">— 拍摄流程、获得最佳效果的要点、全景回放</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/multi-exp/">多重曝光</a> <span class="src-note">— 叠加/平均/明亮/暗 四种合成模式与操作</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/flash/">闪光灯摄影</a> · <a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/flash_setting/">闪光设置（静态摄影）</a> <span class="src-note">— 内置灯升起、TTL/M、闪光灯模式、同步、红眼修正、TTL 锁定</span></li>
+        <li class="group-label">版权说明</li>
+        <li class="src-note">本课插图均取自 FUJIFILM 官方在线说明书，© FUJIFILM Corporation，仅用于个人学习。</li>
+      </ul>
+      <div class="callout-box">
+        <p class="callout-title">学习提醒</p>
+        <p>到这一课，你手上的「拍摄手段」已经齐了。下一课转向<b>画质与风格</b>：胶片模拟的每一种配方、动态范围与 D 范围优先级、白平衡微调、色调曲线与颗粒效果——把 X-S20 最大的特色吃干。</p>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="课时切换">
+      <a class="pager-btn" href="0004-duijiao-xitong.html">
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <span>
+          <span class="pager-label">上一课</span>
+          <span class="pager-title">第四课 · 对焦系统：张张清晰</span>
+        </span>
+      </a>
+      <a class="pager-btn" href="0006-huazhi-jiaopian-moniz.html">
+        <span>
+          <span class="pager-label">下一课</span>
+          <span class="pager-title">第六课 · 画质与风格：胶片模拟与拍摄菜单</span>
+        </span>
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </a>
+    </nav>
+  </div>
+</main>
+
+<footer class="page-foot">
+  <div class="page-foot-inner">
+    <span class="mono">X-S20 · Operation Course · Lesson 05</span>
+    <span>内容依据富士官方在线说明书整理；插图 © FUJIFILM Corporation，仅用于个人学习。</span>
+  </div>
+</footer>
+
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>对焦系统：张张清晰 · 第四课</title>
+<meta name="description" content="富士 X-S20 操作课程第四课：AF-S / AF-C / MF、对焦区域与对焦框、AF-C 自定设置、对象检测与眼睛识别、手动对焦辅助、视频对焦。插图取自官方说明书。" />
+<link rel="stylesheet" href="../assets/course.css" />
+</head>
+<body>
+<a class="skip" href="#main">跳到课程内容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="lesson-back" href="index.html">
+      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+      <span>返回首页</span>
+    </a>
+    <p class="lesson-kicker">
+      <span class="chapter">第三章 · 曝光与色彩</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>第四课</span>
+      <span class="en">Lesson 04</span>
+    </p>
+    <h1 class="lesson-title">对焦系统：张张清晰</h1>
+    <p class="lesson-summary">这一课把 X-S20 的对焦系统拆成四层：<b>对焦模式 → 自动对焦模式 → 对焦区域 → 对象检测</b>。学完后，风光（超焦距 / MF）、人像（眼睛对焦）、运动（AF-C 跟踪）三类主体，你都能一次选对方案，不再靠运气。</p>
+    <dl class="lesson-meta">
+      <div><dt>课时长度</dt><dd>约 90 分钟</dd></div>
+      <div><dt>难度</dt><dd>进阶</dd></div>
+      <div><dt>教具</dt><dd>X-S20 · 一支 AF 镜头 ·（可选）三脚架</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="lesson" id="main">
+  <div class="lesson-body">
+
+    <!-- Ⅰ 本课目标 -->
+    <section class="sec" aria-labelledby="sec-goals">
+      <h3 class="sec-head" id="sec-goals"><span class="mark">Ⅰ</span> 本课目标<span class="note">Objectives</span></h3>
+      <ol class="objectives od-stack">
+        <li class="objective"><span class="idx">01</span><span class="txt">分清 AF-S / AF-C / MF 三种对焦模式，并读懂屏幕上对焦指示的四种状态</span></li>
+        <li class="objective"><span class="idx">02</span><span class="txt">用对焦棒 + 后指令拨盘熟练选择对焦点与对焦框大小</span></li>
+        <li class="objective"><span class="idx">03</span><span class="txt">给运动主体选对 AF-C 自定设置（设置 1–6），理解三个参数的含义</span></li>
+        <li class="objective"><span class="idx">04</span><span class="txt">用眼睛识别把焦点稳稳定在眼睛上，用对象检测拍动物与车辆</span></li>
+        <li class="objective"><span class="idx">05</span><span class="txt">用 MF + 峰值 + 对焦确认完成风光超焦距与微距对焦</span></li>
+      </ol>
+      <ul class="gear od-cluster" aria-label="本课教具">
+        <li class="tag">X-S20</li>
+        <li class="tag">一支 AF 镜头</li>
+        <li class="tag">（可选）三脚架</li>
+        <li class="tag">（可选）一个可拍的人/宠物</li>
+      </ul>
+    </section>
+
+    <!-- Ⅱ 对焦模式 -->
+    <section class="sec" aria-labelledby="sec-afmode">
+      <h3 class="sec-head" id="sec-afmode"><span class="mark">Ⅱ</span> 第一层：对焦模式<span class="note">Focus Mode</span></h3>
+      <p class="sec-lead">菜单路径：<b>拍摄菜单 &gt; AF/MF 设置 &gt; 对焦模式</b>。三个选项对应你熟悉的索尼 AFS / AFC / MF。</p>
+
+      <table class="tbl">
+        <thead><tr><th>富士</th><th>索尼对应</th><th>佳能对应</th><th>行为</th></tr></thead>
+        <tbody>
+          <tr><td><b>l 单次 AF（AF-S）</b></td><td>AF-S</td><td>One Shot</td><td>半按快门时对焦并<b>锁定</b>；适合静止主体</td></tr>
+          <tr><td><b>k 连续自动对焦（AF-C）</b></td><td>AF-C</td><td>AI Servo</td><td>半按期间<b>持续跟踪</b>距离变化；适合运动主体</td></tr>
+          <tr><td><b>p 手动对焦（MF）</b></td><td>MF</td><td>MF</td><td>靠镜头对焦环；风光超焦距、微距、暗光都靠它</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">两条容易踩的规则：无论菜单选了什么，<b>只要镜头开关拨到 MF，就是手动对焦</b>；另外若把「AF/MF 设置 &gt; <b>PRE-AF</b>」设为开，AF-S 与 AF-C 下相机会<b>一直</b>在对焦（不按快门也在动），半按更快但更耗电。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_focus-area_x-s20.png" alt="对焦棒与聚焦区域相关按钮" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 1</b> 对焦相关控件。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/autofocus/">官方说明书《自动对焦》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_af-ok_2_x-s20.png" alt="对焦成功的对焦框与指示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 2</b> 合焦时的对焦框与对焦指示。</figcaption>
+        </figure>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 对焦指示速查</h4>
+      <table class="tbl">
+        <thead><tr><th>指示</th><th>状态</th><th>含义</th></tr></thead>
+        <tbody>
+          <tr><td>( )</td><td>对焦中</td><td>相机正在找焦点，等它停下来</td></tr>
+          <tr><td><b>z</b> 点亮绿色</td><td>已合焦并锁定</td><td>AF-S 下的正常状态，可拍</td></tr>
+          <tr><td><b>( z )</b> 点亮绿色带括号</td><td>已合焦，持续跟踪</td><td>AF-C 下的正常状态，焦点会继续跟随</td></tr>
+          <tr><td><b>A</b> 闪烁白色</td><td>无法对焦</td><td>换对焦点、拉远或补光（第 2 课那张表）</td></tr>
+          <tr><td><b>j</b></td><td>手动对焦</td><td>MF 模式下的常规指示</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Ⅲ 自动对焦模式 -->
+    <section class="sec" aria-labelledby="sec-afarea">
+      <h3 class="sec-head" id="sec-afarea"><span class="mark">Ⅲ</span> 第二层：自动对焦模式<span class="note">AF Mode</span></h3>
+      <p class="sec-lead">同一套菜单里的「自动对焦模式」，决定<b>对焦框的形状与工作方式</b>。注意它的选项会随对焦模式变化——这是富士与索尼不一样的地方。</p>
+
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>在 AF-S（l）下</th><th>在 AF-C（k）下</th><th>典型用途</th></tr></thead>
+        <tbody>
+          <tr><td><b>r 单点</b></td><td>只对所选对焦点对焦</td><td>跟踪所选对焦点上的主体</td><td>风光精确对焦、人像半身、近静物</td></tr>
+          <tr><td><b>y 区</b></td><td>在所选对焦区内自动选点</td><td>跟踪所选对焦区内的主体</td><td>运动、鸟类、可预测轨迹</td></tr>
+          <tr><td><b>z 广域 / 跟踪</b></td><td>AF-S 下为广域：自动找高对比度主体</td><td>AF-C 下为跟踪：在整个画面里追主体</td><td>抓拍、主体位置不确定</td></tr>
+          <tr><td><b>j 全部</b></td><td colspan="2">在对焦点选择显示中，旋转后指令拨盘可在上三者之间循环切换</td><td>想随时换模式时用它</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_af-mode_single_x-s20.png" alt="单点自动对焦模式显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 3</b> 单点：小方框即对焦框，可用后指令拨盘改大小。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_af-mode_zone_x-s20.png" alt="区自动对焦模式显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 4</b> 区：大方框，内含 3×3 / 5×5 / 7×7 个对焦点。</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout-box">
+        <p class="callout-title">「广域 / 跟踪」为什么只有一个名字</p>
+        <p>菜单里 z 位显示为「广域/跟踪」，<b>实际行为随对焦模式切换</b>：AF-S 下是「广域」（自动找高对比度处），AF-C 下变成「跟踪」（框住主体后持续追）。所以切换对焦模式后，最好瞄一眼对焦框变成什么样了。</p>
+      </div>
+    </section>
+
+    <!-- Ⅳ 选对焦点 -->
+    <section class="sec" aria-labelledby="sec-focusarea">
+      <h3 class="sec-head" id="sec-focusarea"><span class="mark">Ⅳ</span> 第三层：把对焦点放到该在的地方<span class="note">Focus Area</span></h3>
+      <p class="sec-lead">菜单路径：<b>AF/MF 设置 &gt; 聚焦区域</b>，或直接开始用<b>对焦棒</b>操作。这套手势一旦形成肌肉记忆，后面两课都会快很多。</p>
+
+      <table class="tbl">
+        <thead><tr><th>动作</th><th>单点</th><th>区</th><th>广域 / 跟踪</th></tr></thead>
+        <tbody>
+          <tr><td>对焦棒<b>倾斜</b></td><td>移动对焦点</td><td>移动对焦区</td><td>移动对焦区（跟踪时把框住主体）</td></tr>
+          <tr><td>对焦棒<b>按下中央</b></td><td>放大对焦区域确认</td><td>回到中央对焦点</td><td>回到中央</td></tr>
+          <tr><td>后指令拨盘<b>旋转</b></td><td>6 档对焦框大小</td><td>3 档（3×3 / 5×5 / 7×7）</td><td>—</td></tr>
+          <tr><td>DISP/BACK</td><td colspan="3">把对焦点一键归中（构图前先按它清零）</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_focus-lever_all_x-s20.png" alt="对焦棒的倾斜方向" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 5</b> 倾斜对焦棒移动对焦点。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_focus-lever_push_x-s20.png" alt="按下对焦棒中央放大对焦" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 6</b> 按下中央 = 对焦变焦（放大确认）。</figcaption>
+        </figure>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s5);">两个值得现在就改的细节设置：</p>
+      <table class="tbl">
+        <thead><tr><th>设置</th><th>作用</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td>焦点数</td><td>117 点（9×13）或 425 点（17×25）</td><td>风光用小点位、人像用多点，看习惯；425 点更精细</td></tr>
+          <tr><td>AF 点显示 yz</td><td>区 / 跟踪时是否显示每个小对焦框</td><td>想看得更干净就关掉</td></tr>
+          <tr><td>按方向存储 AF 模式</td><td>竖拍与横拍各自记住 AF 模式与区域</td><td>人像常竖拍 → 设为「开」，省得每次重调</td></tr>
+          <tr><td>焦点包围</td><td>对焦区域选择是全画面还是限制在边框内</td><td>默认即可</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">对焦变焦的三个限制</p>
+        <ul>
+          <li>只在 <b>AF-S + 单点</b> 时可用；AF-C 或 PRE-AF 开启时不可用。</li>
+          <li>变焦倍率用<b>后指令拨盘</b>调整。</li>
+          <li>对焦棒中央的功能可在「按钮/拨盘设置 &gt; 对焦杆设置」里改；也可以把「对焦变焦」指派给别的功能键。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅴ AF-C 自定设置 -->
+    <section class="sec" aria-labelledby="sec-afc">
+      <h3 class="sec-head" id="sec-afc"><span class="mark">Ⅴ</span> AF-C 自定设置：给运动主体配方<span class="note">AF-C Custom</span></h3>
+      <p class="sec-lead">这是富士对焦系统里最「索尼味」的一块：6 组预设，每组由三个参数组成。拍孩子、宠物、飞鸟、车辆时，选错组比不选还糟。</p>
+
+      <table class="tbl">
+        <thead><tr><th>设置</th><th>适合</th><th>追踪灵敏度</th><th>速度追踪</th><th>区域切换</th></tr></thead>
+        <tbody>
+          <tr><td>设置 1 多用途</td><td>通用移动主体</td><td>2</td><td>0</td><td>自动</td></tr>
+          <tr><td>设置 2 忽略障碍 &amp; 继续追踪</td><td>主体常被遮挡、或有杂物进入对焦区</td><td><b>3</b>（更能忍）</td><td>0</td><td>中心</td></tr>
+          <tr><td>设置 3 加速 / 减速主体</td><td>速度骤变（起跑、急停）</td><td>2</td><td><b>2</b></td><td>自动</td></tr>
+          <tr><td>设置 4 突然出现的主体</td><td>忽然闯入画面</td><td><b>0</b>（立刻换）</td><td>1</td><td>前</td></tr>
+          <tr><td>设置 5 不规则移动</td><td>又快又乱、前后左右大动作</td><td>3</td><td>2</td><td>自动</td></tr>
+          <tr><td>设置 6 自定义</td><td>以上都不合适，自己调</td><td colspan="3">按自己的偏好逐项设定</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_af-c_set1_x-s20_zhs.png" alt="AF-C 自定设置列表" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 7</b> AF-C 自定设置：设置 1–6。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_af-c_set6_x-s20_zhs.png" alt="设置 6 自定义参数" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 8</b> 设置 6 自定义：三项参数逐一手调。</figcaption>
+        </figure>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 三个参数到底在调什么</h4>
+      <table class="tbl">
+        <thead><tr><th>参数</th><th>含义</th><th>调高的后果</th></tr></thead>
+        <tbody>
+          <tr><td><b>追踪灵敏度</b>（0–4）</td><td>有东西挡在主体前/后时，相机<b>等多久</b>才切走焦点</td><td>越高越「粘」原主体，但主体真离开时反应更慢</td></tr>
+          <tr><td><b>速度追踪灵敏度</b>（0–2）</td><td>对主体移动速度变化的反应灵敏度</td><td>越高越能跟上骤变，但高反光/低对比主体更容易失焦</td></tr>
+          <tr><td><b>区域切换</b>（仅区模式）</td><td>区自动对焦优先哪个区域</td><td><b>前</b>=最近的主体；<b>中心</b>=区中央；<b>自动</b>=先锁中央再跟踪</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">Vlog 与人像其实很少用 AF-C 自定</p>
+        <p>它主要解决「快速、无规律、可能被遮挡」的主体。你的三类场景里：<b>风光</b>用 AF-S 单点或 MF；<b>人像</b>用 AF-S + 眼睛识别（下面一节）；<b>Vlog</b>自拍用 AF-C + 广域/跟踪即可，设置 1 足够。真正需要细调的是拍小孩、宠物、运动赛事。</p>
+      </div>
+    </section>
+
+    <!-- Ⅵ 对象检测 -->
+    <section class="sec" aria-labelledby="sec-detect">
+      <h3 class="sec-head" id="sec-detect"><span class="mark">Ⅵ</span> 对象检测与眼睛识别<span class="note">Subject Detection</span></h3>
+      <p class="sec-lead">两项功能二选一，<b>开一个会自动关掉另一个</b>——这点必须先记住，否则你会发现「测光怎么不听话」（第 3 课埋的伏笔）。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">A</span> 脸部识别 / 眼睛识别（拍人的正解）</h4>
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>行为</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td>脸部识别开 + <b>u 眼睛识别自动</b></td><td>检测到脸时自动选择一只眼睛</td><td><b>人像首选</b></td></tr>
+          <tr><td>脸部识别开 + v 右眼 / w 左眼优先</td><td>固定优先某一只眼</td><td>特写、构图可控时用</td></tr>
+          <tr><td>脸部识别开 + g 眼睛识别关</td><td>只认脸，不对眼</td><td>全身、远景人像</td></tr>
+          <tr><td>关</td><td>关闭脸部与眼睛优先</td><td>风光必选此项</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s4);">实战要点：对焦区内检测到的<b>单张脸用白框标记</b>；有多张脸时相机自动选一张，你可以<b>轻触屏幕</b>重新指定；对焦于眼睛时，用被指派「左眼/右眼切换」的功能键可以换眼。若主体离开画面，相机会<b>等一段时间</b>——所以白框有时会出现在没有脸的地方，这是设计如此。</p>
+
+      <figure class="figure">
+        <div class="img-frame"><img src="../assets/images/osd_sm_face01_x-s20.png" alt="脸部识别与白框标记" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 9</b> 脸部识别的白框标记（官方插图）。</figcaption>
+      </figure>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> 对象检测设定（拍动物与车）</h4>
+      <table class="tbl">
+        <thead><tr><th>对象</th><th>相机跟踪的部位</th></tr></thead>
+        <tbody>
+          <tr><td>E 动物</td><td>狗、猫</td></tr>
+          <tr><td>F 鸟</td><td>鸟类</td></tr>
+          <tr><td>G 汽车</td><td>车身或车头（偏运动型汽车）</td></tr>
+          <tr><td>H 摩托车 &amp; 自行车</td><td>骑手</td></tr>
+          <tr><td>I 飞机</td><td>驾驶舱、机头或机身</td></tr>
+          <tr><td>J 火车</td><td>驾驶室或车头</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">你的三类场景怎么配</p>
+        <ul>
+          <li><b>风光</b>：对象检测 = <b>关</b>，脸部识别 = <b>关</b>。否则第 3 课的测光模式会被接管。</li>
+          <li><b>人像</b>：对象检测关、脸部识别开 + 眼睛识别自动 + AF-S 单点。</li>
+          <li><b>Vlog 自拍</b>：脸部识别开 + 眼睛识别自动 + AF-C + 广域；走动时眼睛识别会短暂丢帧，属正常。</li>
+          <li>拍到宠物（猫狗）才用对象检测「动物」；这两项不能同时开。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅶ 手动对焦 -->
+    <section class="sec" aria-labelledby="sec-mf">
+      <h3 class="sec-head" id="sec-mf"><span class="mark">Ⅶ</span> 手动对焦：风光的看家本领<span class="note">Manual Focus</span></h3>
+      <p class="sec-lead">把「对焦模式」设为手动对焦后，用<b>镜头对焦环</b>调焦：向左转减小对焦距离，向右转增加。方向不对可在「按钮/拨盘设置 &gt; 镜头变焦/对焦设定」里反转。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_focusring_x-s20.png" alt="镜头对焦环" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 10</b> 镜头对焦环。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/manual-focus/">官方说明书《手动对焦》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_mode-m_depth_2_x-s20.png" alt="手动对焦距离与景深指示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 11</b> 手动对焦指示：白线 = 对焦距离，蓝条 = 景深范围。</figcaption>
+        </figure>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s5);">这张图里的<b>蓝条就是景深</b>——白线是当前合焦距离，蓝条覆盖的区间都是清晰的。风光超焦距对焦的全部秘密就在这条蓝条上：转动对焦环，让<b>蓝条的后端刚好碰到无穷远</b>，前景能清晰的最大范围就到位了。景深标尺依据可在「AF/MF 设置 &gt; 景深标尺」中选 <b>像素</b>（屏幕高分辨率查看）或<b>底片格式像素</b>（打印用途）。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 四种手动对焦助手</h4>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_focus-peak.png" alt="峰值对焦示意" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 12</b> 峰值对焦：高对比度轮廓被高亮，最容易用。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_split-image.png" alt="数码裂像屏示意" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 13</b> 数码裂像屏：四块图像对齐即合焦。</figcaption>
+        </figure>
+      </div>
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_micro-prism-image.png" alt="数字微棱镜示意" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 14</b> 数字微棱镜：网格纹消失即合焦。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_focus-meter.png" alt="对焦计示意" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 15</b> 对焦计：指针居中即合焦。</figcaption>
+        </figure>
+      </div>
+
+      <table class="tbl" style="margin-top: var(--s5);">
+        <thead><tr><th>助手</th><th>怎么判断合焦</th><th>适合</th></tr></thead>
+        <tbody>
+          <tr><td><b>峰值对焦</b></td><td>合焦处轮廓被彩色高亮（可选颜色与级别）</td><td>风光远景、微距，最推荐</td></tr>
+          <tr><td>数码裂像屏</td><td>中央四块分割图像对齐</td><td>有明确线条的静物</td></tr>
+          <tr><td>数字微棱镜</td><td>网格纹消失、画面变清晰</td><td>传统手动镜头手感</td></tr>
+          <tr><td>对焦计</td><td>指针指向正上方（偏左=焦点在前，偏右=在后）</td><td>快速粗调，精度一般</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">还有两个 MF 的辅助开关：<b>对焦确认</b>设为开后，一转对焦环就自动放大所选对焦区域（按对焦棒中央退出）；<b>AF+MF</b> 设为开，则半按快门锁定后可以再转对焦环微调——这是「先自动，再手动修正」的混合用法，拍静物很好用。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">MF 下的即时自动对焦</p>
+        <p>在 MF 模式里按下被指派了 AF-ON / 对焦锁定的按钮，相机可以<b>临时</b>用自动对焦对准一次：「即时自动对焦设定」里，<b>AF-S</b> = 按一下对一次，<b>AF-C</b> = 按住期间持续对焦。超焦距对焦时用 AF-S 先对到前景、再切回手动微调，比纯手拧快得多。</p>
+      </div>
+    </section>
+
+    <!-- Ⅷ 触摸对焦与视频 -->
+    <section class="sec" aria-labelledby="sec-touch">
+      <h3 class="sec-head" id="sec-touch"><span class="mark">Ⅷ</span> 触摸对焦与视频对焦<span class="note">Touch &amp; Movie AF</span></h3>
+      <p class="sec-lead">触摸屏模式有四种，选错会让「点一下就拍照」这种事突然发生。路径：<b>AF/MF 设置 &gt; 触摸屏模式</b>。</p>
+
+      <table class="tbl">
+        <thead><tr><th>模式</th><th>轻触画面时</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td><b>触控拍摄</b></td><td>对焦<b>并立刻释放快门</b></td><td>自拍、低角度偷拍；日常慎用</td></tr>
+          <tr><td><b>AF</b></td><td>只对焦并锁定距离；点 AF OFF 解除</td><td>三脚架上定点对焦最方便</td></tr>
+          <tr><td><b>区域</b></td><td>把对焦框移到触点</td><td>日常推荐：只挪框，不触发拍照</td></tr>
+          <tr><td><b>关闭</b></td><td>触控关闭</td><td>戴手套、雨天</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">若想彻底禁用触控并隐藏触摸屏模式指示，到「按钮/拨盘设置 &gt; 触摸屏设置 &gt; 触摸屏设置」选关。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_touch-pad02_x-s20.png" alt="触摸板操作示意一" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 16</b> 触摸板操作（官方插图）。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_touch-pad03_x-s20.png" alt="触摸板操作示意二" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 17</b> 取景器拍摄时的触摸板拖动。</figcaption>
+        </figure>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s5);">视频（Vlog）场景的对焦设置与照片<b>分开存储</b>，在动画菜单的「AF/MF 设置」里。三个对你最要紧的项：</p>
+      <ul class="gear od-cluster" aria-label="视频对焦要点">
+        <li class="tag">AF-C 速度：调慢更平滑，调快更跟手</li>
+        <li class="tag">AF-C 灵敏度：主体被遮挡时是否换焦</li>
+        <li class="tag">对象检测：自拍 Vlog 时保持脸部识别开</li>
+      </ul>
+
+      <div class="callout-box">
+        <p class="callout-title">Vlog 跟焦的实用配方</p>
+        <p>自拍走动口播：<b>AF-C + 广域/跟踪 + 眼睛识别自动</b>，AF-C 速度调<b>慢</b>（避免焦点在脸上来回「呼吸」）。拍摄产品测评：Vlog 档的<b>产品优先模式</b>设为开，焦点会锁在前景物体上，手伸过去也不会跳到手。</p>
+      </div>
+    </section>
+
+    <!-- Ⅸ 迁移提示 -->
+    <section class="sec" aria-labelledby="sec-migrate">
+      <h3 class="sec-head" id="sec-migrate"><span class="mark">Ⅸ</span> 迁移提示<span class="note">From Sony / Canon</span></h3>
+      <div class="callout-box">
+        <p class="callout-title">对焦这块，和索尼 / 佳能最不一样的 5 点</p>
+        <ul>
+          <li><b>对焦模式在菜单里，不在机身上</b>：索尼有机身 AF/MF 拨杆，富士只能进「AF/MF 设置」或用 Fn 快捷键。建议一开始就把它指派到一个 Fn 键（第 8 课）。</li>
+          <li><b>「自动对焦模式」的选项随对焦模式变</b>：AF-S 下是单点/区/广域，AF-C 下第三项变成「跟踪」。索尼的 Wide/Tracking 是独立一项。</li>
+          <li><b>对象检测与脸部识别互斥</b>：开一个自动关另一个，而且它们<b>会接管测光</b>。索尼的概念是分开的「主体识别」。</li>
+          <li><b>对焦框大小要手动拨</b>：后指令拨盘调框大小是富士特色，索尼多是固定尺寸或菜单里改。</li>
+          <li><b>景深标尺是 MF 的杀手级 UI</b>：蓝条显示景深范围，超焦距对焦可以「看着调」而不是靠经验估。索尼的峰值对焦没有这个。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅹ 课后练习 -->
+    <section class="sec" aria-labelledby="sec-exercise">
+      <h3 class="sec-head" id="sec-exercise"><span class="mark">Ⅹ</span> 课后练习<span class="note">Exercise</span></h3>
+      <ol class="exercise-list od-stack">
+        <li class="exercise-item">
+          <span class="idx">01</span>
+          <span class="txt">简答：拍半身人像，希望焦点稳稳落在眼睛上，对焦模式与两项识别设置分别该怎么选？
+            <details class="answer"><summary>参考答案</summary><p>对焦模式 <b>AF-S（单次 AF）</b> + 自动对焦模式<b>单点</b>；「脸部识别/眼睛识别设置」设为<b>脸部识别开 + 眼睛识别自动</b>；对象检测必须为<b>关</b>（否则会自动关掉脸部识别）。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">02</span>
+          <span class="txt">判断：AF-S 与 AF-C 下，「广域 / 跟踪」这个选项的行为是一样的。
+            <details class="answer"><summary>参考答案</summary><p>错误。AF-S 下是<b>广域</b>（自动对焦于高对比度主体），AF-C 下变成<b>跟踪</b>（框住主体后持续追随）。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">03</span>
+          <span class="txt">选择：三脚架上拍远景风光，想确保从前景到远山都在景深内，最可靠的做法是？
+            <details class="answer"><summary>参考答案</summary><p>用 <b>MF</b>（手动对焦），打开<b>峰值对焦</b>辅助，转动对焦环观察手动对焦指示的<b>蓝条（景深）</b>，让蓝条后端刚好覆盖到无穷远——这就是超焦距对焦。</p></details>
+          </span>
+        </li>
+      </ol>
+
+      <div class="callout-box">
+        <p class="callout-title">实拍小任务（二选一）</p>
+        <ul>
+          <li><b>人像向</b>：用眼睛识别 + AF-S 单点，拍 5 张半身特写，回放时逐张按对焦棒中央放大，检查焦点是否都在眼睛上。</li>
+          <li><b>风光向</b>：三脚架上用 MF + 峰值，把蓝条后端推到无穷远拍一张；再直接对无穷远拍一张。回放对比前景的清晰度差异。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅺ 出处与延伸 -->
+    <section class="sec" aria-labelledby="sec-sources">
+      <h3 class="sec-head" id="sec-sources"><span class="mark">Ⅺ</span> 出处与延伸<span class="note">Sources</span></h3>
+      <ul class="sources">
+        <li class="group-label">本课对应的官方说明书页面（主教材）</li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/autofocus/">自动对焦</a> <span class="src-note">— 对焦模式、自动对焦模式、对焦点选择与显示、对焦变焦、对焦困难的对象</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/manual-focus/">手动对焦</a> <span class="src-note">— 对焦环、手动对焦指示与景深、四种对焦助手</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/af_mf_setting/">AF/MF 设置（静态摄影）</a> <span class="src-note">— AF-C 自定设置、对象检测、脸部/眼睛识别、AF+MF、释放/对焦优先、AF 范围限制器、触摸屏模式</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/af_mf_setting_movie/">AF/MF 设置（动画录制）</a> <span class="src-note">— 视频对焦设置（与照片分开存储）</span></li>
+        <li class="group-label">版权说明</li>
+        <li class="src-note">本课插图均取自 FUJIFILM 官方在线说明书，© FUJIFILM Corporation，仅用于个人学习。</li>
+      </ul>
+      <div class="callout-box">
+        <p class="callout-title">学习提醒</p>
+        <p>对焦解决了「清晰」，下一课解决「拍得到」——包围、连拍、HDR、全景、多重曝光与闪光。风光最常用的 HDR 与全景都在那一课。</p>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="课时切换">
+      <a class="pager-btn" href="0003-baoguang-bopian-tixi.html">
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <span>
+          <span class="pager-label">上一课</span>
+          <span class="pager-title">第三课 · 曝光控制：富士拨盘操作体系</span>
+        </span>
+      </a>
+      <a class="pager-btn" href="0005-jinjie-paifa.html">
+        <span>
+          <span class="pager-label">下一课</span>
+          <span class="pager-title">第五课 · 进阶拍摄技法：风光利器与闪光</span>
+        </span>
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </a>
+    </nav>
+  </div>
+</main>
+
+<footer class="page-foot">
+  <div class="page-foot-inner">
+    <span class="mono">X-S20 · Operation Course · Lesson 04</span>
+    <span>内容依据富士官方在线说明书整理；插图 © FUJIFILM Corporation，仅用于个人学习。</span>
+  </div>
+</footer>
+
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

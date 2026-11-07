@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>曝光控制：富士拨盘操作体系 · 第三课</title>
+<meta name="description" content="富士 X-S20 操作课程第三课：P/S/A/M 模式与拨盘映射、ISO 与自动 ISO、测光模式、曝光补偿、AE/AF 锁定、C1–C4 自定义档。插图取自官方说明书。" />
+<link rel="stylesheet" href="../assets/course.css" />
+</head>
+<body>
+<a class="skip" href="#main">跳到课程内容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="lesson-back" href="index.html">
+      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+      <span>返回首页</span>
+    </a>
+    <p class="lesson-kicker">
+      <span class="chapter">第三章 · 曝光与色彩</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>第三课</span>
+      <span class="en">Lesson 03</span>
+    </p>
+    <h1 class="lesson-title">曝光控制：富士拨盘操作体系</h1>
+    <p class="lesson-summary">这一课不重讲曝光三要素——你已经懂。我们只解决一件事：<b>在 X-S20 上，用哪个部件调哪个参数</b>。学完后你可以在任何光线下 30 秒内把 P/S/A/M、ISO、测光与曝光补偿一次调对，并把常用组合存进 C1–C4。</p>
+    <dl class="lesson-meta">
+      <div><dt>课时长度</dt><dd>约 75 分钟</dd></div>
+      <div><dt>难度</dt><dd>进阶（需 ISO / 快门 / 光圈概念）</dd></div>
+      <div><dt>教具</dt><dd>X-S20 · 带光圈环的镜头 ·（可选）三脚架</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="lesson" id="main">
+  <div class="lesson-body">
+
+    <!-- Ⅰ 本课目标 -->
+    <section class="sec" aria-labelledby="sec-goals">
+      <h3 class="sec-head" id="sec-goals"><span class="mark">Ⅰ</span> 本课目标<span class="note">Objectives</span></h3>
+      <ol class="objectives od-stack">
+        <li class="objective"><span class="idx">01</span><span class="txt">说清 P / S / A / M 四档下，快门、光圈、曝光补偿各自由哪个拨盘负责</span></li>
+        <li class="objective"><span class="idx">02</span><span class="txt">读懂 M 档的曝光指示与红色警告，会用 B 门与 T 门做长时间曝光</span></li>
+        <li class="objective"><span class="idx">03</span><span class="txt">配置自动 ISO（自动1/2/3）并为风光、Vlog 各设一组</span></li>
+        <li class="objective"><span class="idx">04</span><span class="txt">选对测光模式，用曝光补偿与 AE/AF 锁定处理逆光与高反差</span></li>
+        <li class="objective"><span class="idx">05</span><span class="txt">把「风光」与「人像」两套参数存进 C1 / C2</span></li>
+      </ol>
+      <ul class="gear od-cluster" aria-label="本课教具">
+        <li class="tag">X-S20</li>
+        <li class="tag">带光圈环的镜头</li>
+        <li class="tag">（可选）三脚架</li>
+        <li class="tag">（可选）ND 滤镜</li>
+      </ul>
+    </section>
+
+    <!-- Ⅱ 拨盘体系总览 -->
+    <section class="sec" aria-labelledby="sec-dials">
+      <h3 class="sec-head" id="sec-dials"><span class="mark">Ⅱ</span> 先记住这张表：拨盘 × 模式<span class="note">Dial Map</span></h3>
+      <p class="sec-lead">富士的曝光操作是「物理优先」的：<b>模式拨盘定分工，前后指令拨盘 + 镜头光圈环干活</b>。下面这张表是本课的地基，建议直接对着相机拨一遍。</p>
+
+      <table class="tbl">
+        <thead><tr><th>模式</th><th>前指令拨盘</th><th>后指令拨盘</th><th>Fn 拨盘（出厂）</th></tr></thead>
+        <tbody>
+          <tr><td>AUTO</td><td>自动 / 场景定位</td><td>曝光补偿</td><td>胶片模拟</td></tr>
+          <tr><td>P（程序 AE）</td><td><b>程序切换</b></td><td>曝光补偿</td><td>胶片模拟</td></tr>
+          <tr><td>S（快门优先）</td><td><b>快门速度</b></td><td>曝光补偿</td><td>胶片模拟</td></tr>
+          <tr><td>A（光圈优先）</td><td><b>光圈</b></td><td>曝光补偿</td><td>胶片模拟</td></tr>
+          <tr><td>M（手动）</td><td>光圈（无光圈环时）</td><td><b>快门速度</b></td><td>胶片模拟</td></tr>
+          <tr><td>FILTER</td><td>程序切换</td><td>曝光补偿</td><td><b>滤镜选择</b></td></tr>
+          <tr><td>Vlog / 动画 / C1–C4</td><td colspan="3">因该模式下所选曝光模式而异</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">两个关键例外</p>
+        <ul>
+          <li><b>镜头有光圈环时</b>，A 档与 M 档的光圈由<b>镜头光圈环</b>决定，前指令拨盘让位。若把光圈环转到 <b>A</b>（或镜头本身无光圈环），光圈才交回前指令拨盘。</li>
+          <li>两个拨盘的分工都可以在「按钮/拨盘设置 &gt; 命令转盘设定」里重新指派（第 8 课）。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅲ P / S / A / M -->
+    <section class="sec" aria-labelledby="sec-psam">
+      <h3 class="sec-head" id="sec-psam"><span class="mark">Ⅲ</span> P / S / A / M 逐档实操<span class="note">P · S · A · M</span></h3>
+
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">P</span> 程序自动：把「程序切换」变成自己的构图工具</h4>
+      <p class="sec-lead">相机会自行组合快门与光圈。你觉得这个组合不合适（比如想在白天把背景虚化得更明显），就<b>转前指令拨盘</b>——快门与光圈同步变化、曝光量不变，这叫<b>程序切换</b>。</p>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_mode-p_x-s20.png" alt="模式拨盘转至 P" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 1</b> 模式拨盘转至 P。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/shooting_mode/">官方说明书《选择拍摄模式》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_mode-p_lcd_x-s20.png" alt="P 模式拍摄显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 2</b> P 模式：快门与光圈由相机给出。</figcaption>
+        </figure>
+      </div>
+      <p class="sec-lead" style="margin-top: var(--s4);">程序切换在三种情况下<b>不可用</b>：闪光灯功能设置为 TTL、动态范围选为自动、动画模式下。<b>关闭相机即取消</b>程序切换，恢复默认组合。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">S</span> 快门优先：风光里的流水、车轨、飘云</h4>
+      <p class="sec-lead">用<b>前指令拨盘</b>选快门速度，相机自动配光圈。若所选速度下无法获得正确曝光，<b>光圈数值会变红</b>——这就是「光线不够快 / 太亮压不住」的提示。若主体超出测光范围，光圈显示「–––」。</p>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_mode-s_x-s20.png" alt="模式拨盘转至 S" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 3</b> 模式拨盘转至 S。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_mode-s_lcd_x-s20.png" alt="S 模式拍摄显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 4</b> S 模式：快门速度由你定，光圈自动。</figcaption>
+        </figure>
+      </div>
+      <div class="callout-box">
+        <p class="callout-title">慢门风光的三个必做动作</p>
+        <ul>
+          <li><b>低于 1 秒</b>时屏幕显示倒计时定时器——这是正常现象，说明正在曝光。</li>
+          <li>把「图像质量设置 &gt; <b>长时间曝光降噪</b>」设为开，可减少斑点，但会增加拍完后的处理等待时间。</li>
+          <li><b>一定上三脚架</b>。长时间曝光期间任何移动都会让照片失焦。</li>
+        </ul>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">A</span> 光圈优先：风光的景深与光斑</h4>
+      <p class="sec-lead">用<b>镜头光圈环</b>选光圈，相机配快门速度。若所选光圈下快门无法给出正确曝光，<b>快门速度会变红</b>。半按快门期间也可继续调整光圈。</p>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_mode-a_x-s20.png" alt="模式拨盘转至 A" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 5</b> 模式拨盘转至 A。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_mode-a_lcd_x-s20.png" alt="A 模式拍摄显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 6</b> A 模式：光圈由你定，快门自动。</figcaption>
+        </figure>
+      </div>
+      <p class="sec-lead" style="margin-top: var(--s4);">A 档最好用的隐藏功能是<b>景深预览</b>：把「景深预览」指派给某个功能按钮后，按住它会显示 L 图标并把光圈真正收缩到你设定的值——取景时看到的就是最终的景深，而不是全开光圈下的假象。风光判断「前景到远山是否都在焦内」全靠它（具体指派在第 8 课）。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">M</span> 手动曝光：读曝光指示，而不是猜</h4>
+      <p class="sec-lead">M 档下<b>后指令拨盘选快门速度</b>、<b>镜头光圈环选光圈</b>（无光圈环时用前指令拨盘）。屏幕上的<b>曝光指示</b>显示当前组合过曝或欠曝多少，把它调到 0 附近即为你认可的曝光。</p>
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_mode-m_x-s20.png" alt="模式拨盘转至 M" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 7</b> 模式拨盘转至 M。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_mode-m_lcd_x-s20.png" alt="M 模式拍摄显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 8</b> M 模式：屏幕上出现曝光指示刻度。</figcaption>
+        </figure>
+      </div>
+      <div class="callout-box">
+        <p class="callout-title">M 档下「屏幕不准」的解药</p>
+        <p>默认情况下 LCD 可能不反映真实曝光。到「<b>屏幕设置 &gt; 手动模式下预览曝光/白平衡</b>」选 <b>预览曝光/白平衡</b>，屏幕就会实时显示曝光结果。<b>但用闪光灯时不要用这个模式</b>——那时画面会因为闪光未触发而显得很暗。</p>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 长时间曝光：T 门与 B 门</h4>
+      <table class="tbl">
+        <thead><tr><th>方式</th><th>怎么操作</th><th>限制与提示</th></tr></thead>
+        <tbody>
+          <tr><td><b>T 门</b>（1 秒及更慢）</td><td>在 S / M 档把快门速度调到 1 秒以下</td><td>曝光中显示倒计时；必须上三脚架</td></tr>
+          <tr><td><b>B 门</b>（BULB）</td><td>快门速度调到 BULB → 完全按下并<b>按住</b>快门，松开结束</td><td>最长 60 分钟；仅限「静态图像 / 多重曝光」驱动模式，且快门类型不能是电子快门</td></tr>
+          <tr><td>遥控快门</td><td>选购 RR-100 或第三方电子快门线，经 Φ2.5→3.5 mm 适配器接麦克风/遥控插孔</td><td>在动画 / Vlog 档接入时，需把「麦克风/遥控快门装置」选为遥控</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Ⅳ ISO -->
+    <section class="sec" aria-labelledby="sec-iso">
+      <h3 class="sec-head" id="sec-iso"><span class="mark">Ⅳ</span> 感光度：三个自动 ISO 怎么分工<span class="note">ISO</span></h3>
+      <p class="sec-lead">按 <b>ISO 按钮</b>查看与更改感光度。范围是 ISO 160–12800，另可扩展到 <b>L（80 / 100 / 125）</b>与 <b>H（25600 / 51200）</b>——H 下容易出现斑点，L 下动态范围会变窄，只在特殊情况下用。</p>
+
+      <figure class="figure">
+        <div class="img-frame"><img src="../assets/images/ill_bd_up_iso_x-s20.png" alt="ISO 按钮位置" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 9</b> ISO 按钮。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/iso/">官方说明书《感光度》</a>。</figcaption>
+      </figure>
+
+      <p class="sec-lead">AUTO 档之外，感光度有三种「自动」。它们的逻辑完全一样：<b>先待在默认感光度，只有当达到理想曝光所需的快门速度会低于「最低快门速度」时，才把 ISO 往上抬，直到最大值为止</b>。三档的出厂默认值如下：</p>
+
+      <table class="tbl">
+        <thead><tr><th>自动档</th><th>默认感光度</th><th>最大感光度</th><th>最低快门速度</th><th>适合</th></tr></thead>
+        <tbody>
+          <tr><td>自动1</td><td>160</td><td>800</td><td>自动</td><td>画质优先：风光上三脚架、光线可控</td></tr>
+          <tr><td>自动2</td><td>160</td><td>3200</td><td>自动</td><td>通用：白天街拍、随手记录</td></tr>
+          <tr><td>自动3</td><td>160</td><td>12800</td><td>自动</td><td>暗光优先：室内、夜景手持、Vlog</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">每一项都可以自定义：默认感光度 160–12800、最大感光度 400–12800、最低快门速度 1/4000–30 秒或自动。两条规则要注意：若<b>默认感光度被设得高于最大感光度</b>，相机会把它压到最大值；若在最大感光度下仍会曝光不足，相机可能<b>突破最低快门速度</b>继续降速。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">给风光和 Vlog 各配一套（建议现在就做）</p>
+        <ul>
+          <li><b>风光</b>：自动1 改成「默认 160 / 最大 800 / 最低快门 1/125」——上架子时宁可欠一点，也不让 ISO 偷偷升上去。</li>
+          <li><b>Vlog</b>：自动3 改成「默认 160 / 最大 6400 / 最低快门 1/50（或 1/60）」——保住帧率对应的安全快门，噪点后期还能救。</li>
+          <li>感光度<b>关机后不会重设</b>，下次开机还是上次的值——这点和索尼一致，别以为它会自己回自动。</li>
+          <li>模式拨盘在 <b>F（动画）或 Vlog</b> 时按 ISO 按钮，进入的是<b>视频菜单的 ISO 项</b>，与照片的 ISO 分开存储。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅴ 测光 -->
+    <section class="sec" aria-labelledby="sec-meter">
+      <h3 class="sec-head" id="sec-meter"><span class="mark">Ⅴ</span> 测光：四种模式的取舍<span class="note">Metering</span></h3>
+      <p class="sec-lead">在「拍摄设置 &gt; 测光」中选择。它决定相机如何判断「这张该有多亮」，风光和人像的选择完全不同。</p>
+
+      <table class="tbl">
+        <thead><tr><th>模式</th><th>怎么算</th><th>风光 / 人像的用法</th></tr></thead>
+        <tbody>
+          <tr><td><b>多重</b></td><td>分析构图、色彩与亮度分布后快速决定</td><td>默认就用它。绝大多数场景最稳，别急着换</td></tr>
+          <tr><td><b>中心加权</b></td><td>全画面测光，但中央区域权重最大</td><td>主体居中的传统构图、逆光人像做参考</td></tr>
+          <tr><td><b>点</b></td><td>只测画面 <b>2%</b> 区域的亮度</td><td>逆光、大光比：测天空保高光，或测主体保人脸</td></tr>
+          <tr><td><b>平均</b></td><td>整幅画面取平均</td><td>多张持续曝光一致（延时、接片）、黑白人像</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">两个会让测光「失效」的开关</p>
+        <ul>
+          <li>当「AF/MF 设置 &gt; 脸部识别/眼睛识别设置」或「对象检测设定」<b>不是关</b>时，你选的测光模式<b>不生效</b>——相机优先按识别到的人脸/对象测光。拍人像时这其实是好事，拍风光时记得把它们关掉。</li>
+          <li>把「AF/MF 设置 &gt; <b>重点 AE 和聚焦区域互锁</b>」设为开，测光点就会跟着你的对焦区域走——点测光 + 移动对焦框，就是最精确的风光选区曝光方式。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅵ 曝光补偿 -->
+    <section class="sec" aria-labelledby="sec-ev">
+      <h3 class="sec-head" id="sec-ev"><span class="mark">Ⅵ</span> 曝光补偿：一个拨盘解决 80% 的光线问题<span class="note">Exposure Comp.</span></h3>
+      <p class="sec-lead">P / S / A 三档下，<b>旋转后指令拨盘</b>即可调整曝光补偿（也可在「按钮/拨盘设置 &gt; 命令转盘设定」改派给其他拨盘）。逆光加、雪景加、暗调场景减——这套直觉你从索尼带过来就行。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_exp-wb_dark.png" alt="曝光补偿偏暗的画面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 10</b> 负补偿：画面变暗，保住高光。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/exa_exp-wb_light.png" alt="曝光补偿偏亮的画面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 11</b> 正补偿：画面变亮，提亮主体。</figcaption>
+        </figure>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s5);">有一个坑要知道：曝光补偿可以在屏幕上预览，但以下三种情况<b>屏幕显示的亮度可能不准</b>——补偿量超过 <b>±3 EV</b>、动态范围设为 <b>DR200% / DR400%</b>、或 D 范围优先级设为强 / 弱。视频同理：F-Log 录制或视频动态范围 200%/400% 时预览也会失真，此时切到 M 档直接调曝光最可靠。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">M 档下也能用曝光补偿</p>
+        <p>当 M 档启用<b>自动 ISO</b> 时，可以把某个功能按钮设为「默认值(曝光补偿)」，或把 Fn 拨盘指派为曝光补偿。按下该按钮后旋转前后指令拨盘，就能在 M 档里继续用补偿——适合既要固定快门光圈、又要快速微调亮度的场景。</p>
+      </div>
+    </section>
+
+    <!-- Ⅶ AE/AF 锁定 -->
+    <section class="sec" aria-labelledby="sec-lock">
+      <h3 class="sec-head" id="sec-lock"><span class="mark">Ⅶ</span> AE / AF 锁定：先测光，再构图<span class="note">AE/AF Lock</span></h3>
+      <p class="sec-lead">逆光风光的经典动作：把亮部放到画面中央测光 → 锁定 → 移回构图 → 拍。富士给了你三个层级的锁定工具。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_ael_x-s20.png" alt="AEL 按钮位置" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 12</b> AEL 按钮：专锁曝光。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/ae-af_lock/">官方说明书《对焦/曝光锁定》</a>。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/ill_bd_up_afon_x-s20.png" alt="AFON 按钮位置" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 13</b> AFON 按钮：可设为「仅限 AF 锁」。</figcaption>
+        </figure>
+      </div>
+
+      <table class="tbl">
+        <thead><tr><th>工具</th><th>锁什么</th><th>怎么用</th></tr></thead>
+        <tbody>
+          <tr><td>半按快门</td><td>对焦 + 曝光</td><td>最常用。需「按钮/拨盘设置 &gt; 快门 AF / 快门 AE」都为 ON</td></tr>
+          <tr><td><b>AEL 按钮</b></td><td>仅曝光</td><td>默认设定。把画面移到亮部 → 按住 AEL → 重新构图 → 拍</td></tr>
+          <tr><td><b>AFON 按钮</b></td><td>仅对焦（需指派）</td><td>把 AFON 指派为「仅限 AF 锁」后，可锁对焦而不锁曝光</td></tr>
+        </tbody>
+      </table>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">两个细节：按住 AEL / AFON 期间，<b>半按快门不会结束锁定</b>；若把「按钮/拨盘设置 &gt; AE/AF-LOCK 设定」改为 <b>AE/AF-LOCK 开关切换</b>，则必须再按一次才能解除锁定（不必一直按着）。另外，<b>曝光锁定期间仍可用对焦棒重新定位对焦点</b>——这是富士很方便的一点。</p>
+
+      <figure class="figure">
+        <div class="img-frame"><img src="../assets/images/osd_sm_ae-af-lock01_x-s20.png" alt="AE/AF 锁定时的屏幕指示" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 14</b> 锁定生效时屏幕上的指示。</figcaption>
+      </figure>
+    </section>
+
+    <!-- Ⅷ C1–C4 -->
+    <section class="sec" aria-labelledby="sec-custom">
+      <h3 class="sec-head" id="sec-custom"><span class="mark">Ⅷ</span> C1–C4：把两套配方存成档位<span class="note">Custom Banks</span></h3>
+      <p class="sec-lead">模式拨盘上的 C1–C4 是四个「参数库」，等于佳能的 C 档、索尼的 MR 回调。它存的是<b>整套拍摄菜单设置</b>，不只是曝光参数。</p>
+
+      <div class="steps-widget">
+        <ol class="steps od-stack" id="step-list">
+          <li class="step" id="step-1">
+            <label class="step-main" for="step-1">
+              <input class="step-input" type="checkbox" id="step-1" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">01</span>
+              <span class="step-body">
+                <span class="step-title">先决定这个库给照片还是给视频</span>
+                <span class="step-text">进「图像质量设置 &gt; <b>自定义模式设定</b>」（视频则在「视频设置」里找同名项），选一个库（C1–C4），再选 <b>静态</b> 或 <b>视频</b>。同一个库只能给其中一种用。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-2">
+            <label class="step-main" for="step-2">
+              <input class="step-input" type="checkbox" id="step-2" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">02</span>
+              <span class="step-body">
+                <span class="step-title">按「保存当前设置」</span>
+                <span class="step-text">进「图像质量设置 &gt; <b>编辑/保存自定义设置</b>」→ 选目标库 → 选「保存当前设置」→ 执行。相机会把<b>此刻</b>的整套拍摄参数存进去。所以先用模式拨盘调到 P/S/A/M，把 ISO、测光、胶片模拟、DR、白平衡都设成你想要的样子，再保存。</span>
+              </span>
+            </label>
+            <figure class="step-figure">
+              <div class="img-frame"><img src="../assets/images/osd_mn_sm_custum-set01_x-s20_zhs.png" alt="编辑/保存自定义设置界面" loading="lazy" /></div>
+              <figcaption class="figcap"><b>图 15</b> 自定义设置库的保存与编辑入口（官方插图）。</figcaption>
+            </figure>
+          </li>
+          <li class="step" id="step-3">
+            <label class="step-main" for="step-3">
+              <input class="step-input" type="checkbox" id="step-3" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">03</span>
+              <span class="step-body">
+                <span class="step-title">需要时「编辑/检查」逐项微调</span>
+                <span class="step-text">同一菜单里选「编辑/检查」，可按项目改参数而不必重存整套。<b>注意</b>：若把「自动更新自定义设置」设为禁用，改过的项目旁会出现小红点但不会自动保存；要保存就得在项目上按 <b>Q</b>，或返回上层选「保存更改」。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-4">
+            <label class="step-main" for="step-4">
+              <input class="step-input" type="checkbox" id="step-4" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">04</span>
+              <span class="step-body">
+                <span class="step-title">复制与重置</span>
+                <span class="step-text">「复制」可把一个库整套覆盖到另一个库（源库改了名也会一起复制）；「重置自定义设置」把该库恢复出厂。建议 C1=风光、C2=人像、C3=Vlog，留 C4 做实验。</span>
+              </span>
+            </label>
+          </li>
+        </ol>
+        <div class="steps-progress">
+          <p class="progress-count"><span class="progress-hint">步骤进度</span><span class="val">0 / 4 步</span></p>
+          <div class="progress-track" aria-hidden="true"><span class="progress-fill"></span></div>
+          <p class="steps-done" hidden>全部步骤已标记完成。</p>
+        </div>
+      </div>
+
+      <div class="callout-box">
+        <p class="callout-title">为什么 C1–C4 比 Q 菜单更值钱</p>
+        <p>Q 菜单改的是「这一次」，C1–C4 存的是「一整套」。到山上光线一变、要换到拍人像，拨一下拨盘就完成整套切换，不用逐项回想「上次那个胶片模拟是哪个」。第 6 课我们会把两套配方的内容填满。</p>
+      </div>
+    </section>
+
+    <!-- Ⅸ 迁移提示 -->
+    <section class="sec" aria-labelledby="sec-migrate">
+      <h3 class="sec-head" id="sec-migrate"><span class="mark">Ⅸ</span> 迁移提示<span class="note">From Sony / Canon</span></h3>
+      <div class="callout-box">
+        <p class="callout-title">曝光操作，从索尼 / 佳能过来最容易踩的 5 个坑</p>
+        <ul>
+          <li><b>光圈不一定在拨盘上</b>：富士优先用<b>镜头光圈环</b>。你以前习惯的「后拨盘调光圈」在 A / M 档会失效——除非把光圈环转到 A。</li>
+          <li><b>M 档的快门在「后」拨盘</b>：和索尼的「前快门后光圈」相反。前拨盘在 M 档只负责光圈（且仅当镜头无光圈环）。</li>
+          <li><b>曝光补偿是模拟拨盘逻辑</b>：P/S/A 下始终由后指令拨盘负责，不需要先按 +/− 键。</li>
+          <li><b>测光会被对象检测接管</b>：开了脸部/眼睛识别或对象检测，你选的测光模式就<b>不生效</b>。索尼是分开算的，这点最容易困惑。</li>
+          <li><b>AUTO 档 ≠ 索尼的绿色 AUTO</b>：它的「场景 + 对象检测」判断不透明，风光别用；直接进 A 档。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅹ 课后练习 -->
+    <section class="sec" aria-labelledby="sec-exercise">
+      <h3 class="sec-head" id="sec-exercise"><span class="mark">Ⅹ</span> 课后练习<span class="note">Exercise</span></h3>
+      <ol class="exercise-list od-stack">
+        <li class="exercise-item">
+          <span class="idx">01</span>
+          <span class="txt">简答：M 档下，快门速度、光圈、ISO 分别用哪个部件调节？
+            <details class="answer"><summary>参考答案</summary><p>快门速度＝<b>后指令拨盘</b>；光圈＝<b>镜头光圈环</b>（镜头无光圈环或光圈环置于 A 时，改用<b>前指令拨盘</b>）；ISO＝按 <b>ISO 按钮</b>后选择。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">02</span>
+          <span class="txt">判断：选了点测光后，打开「脸部识别/眼睛识别设置」，点测光依然按画面中央 2% 区域测光。
+            <details class="answer"><summary>参考答案</summary><p>错误。只要脸部/眼睛识别或对象检测不是「关」，所选测光模式就<b>不生效</b>，相机会按识别到的对象测光。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">03</span>
+          <span class="txt">选择：逆光风光，想让天空不过曝又保住前景细节，最直接的一套操作是？
+            <details class="answer"><summary>参考答案</summary><p>关闭对象检测 → 用点测光测天空（可开「重点 AE 和聚焦区域互锁」）→ 按住 <b>AEL</b> 锁定曝光 → 重新构图 → 拍。若仍不够，再补 −1/3 ~ −1 EV 曝光补偿。</p></details>
+          </span>
+        </li>
+      </ol>
+
+      <div class="callout-box">
+        <p class="callout-title">实拍小任务（可选，风光向）</p>
+        <p>同一风光场景用 A 档拍三张：曝光补偿 −1 / 0 / +1。回放时逐张对比直方图与高光警告，记下「你偏好的那张」落在哪个补偿值——这通常就是你的个人风格基准。然后把这一套（A 档 + 自动1 + 多重测光 + 你的基准补偿）存进 <b>C1</b>。</p>
+      </div>
+    </section>
+
+    <!-- Ⅺ 出处与延伸 -->
+    <section class="sec" aria-labelledby="sec-sources">
+      <h3 class="sec-head" id="sec-sources"><span class="mark">Ⅺ</span> 出处与延伸<span class="note">Sources</span></h3>
+      <ul class="sources">
+        <li class="group-label">本课对应的官方说明书页面（主教材）</li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/shooting_mode/">选择拍摄模式</a> <span class="src-note">— AUTO / P / S / A / M / FILTER / C1–C4、程序切换、景深预览、B 门与 T 门、拨盘功能表</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/iso/">感光度</a> <span class="src-note">— ISO 范围、L/H 扩展、自动1/2/3 的默认值</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/photometry/">测光</a> <span class="src-note">— 多重 / 中心加权 / 点 / 平均，以及与对象检测的关系</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/exposure/">曝光补偿</a> <span class="src-note">— 操作方式与预览失真条件</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/ae-af_lock/">对焦/曝光锁定</a> <span class="src-note">— 半按快门、AEL、AFON 与 AE/AF-LOCK 设定</span></li>
+        <li class="group-label">版权说明</li>
+        <li class="src-note">本课插图均取自 FUJIFILM 官方在线说明书，© FUJIFILM Corporation，仅用于个人学习。</li>
+      </ul>
+      <div class="callout-box">
+        <p class="callout-title">学习提醒</p>
+        <p>曝光解决的是「亮度」，下一课解决「清晰」——对焦系统。风光、人像、运动三种主体各有一套富士的对焦方案，AF-S / AF-C / DMF 与索尼的对应关系也会在那节课讲清。</p>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="课时切换">
+      <a class="pager-btn" href="0002-kuaisu-shangshou.html">
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <span>
+          <span class="pager-label">上一课</span>
+          <span class="pager-title">第二课 · 快速上手：照片、视频与回放完全指南</span>
+        </span>
+      </a>
+      <span class="pager-btn" style="opacity:.4; cursor:default;" aria-disabled="true">
+        <span>
+          <span class="pager-label">下一课</span>
+          <span class="pager-title">第四课 · 对焦系统：张张清晰（制作中）</span>
+        </span>
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </span>
+    </nav>
+  </div>
+</main>
+
+<footer class="page-foot">
+  <div class="page-foot-inner">
+    <span class="mono">X-S20 · Operation Course · Lesson 03</span>
+    <span>内容依据富士官方在线说明书整理；插图 © FUJIFILM Corporation，仅用于个人学习。</span>
+  </div>
+</footer>
+
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

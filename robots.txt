@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+# 课程插图版权归 FUJIFILM Corporation，仅用于个人学习；不欢迎搜索引擎抓取。
+User-agent: *
+Disallow: /

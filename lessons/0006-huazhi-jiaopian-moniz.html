@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>画质与风格：胶片模拟与拍摄菜单 · 第六课</title>
+<meta name="description" content="富士 X-S20 操作课程第六课：图像尺寸与质量、RAW 录制、胶片模拟全谱、白平衡与微调、动态范围与 D 范围优先级、色调曲线、颗粒效果，以及拍摄设置菜单。插图取自官方说明书。" />
+<link rel="stylesheet" href="../assets/course.css" />
+</head>
+<body>
+<a class="skip" href="#main">跳到课程内容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="lesson-back" href="index.html">
+      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+      <span>返回首页</span>
+    </a>
+    <p class="lesson-kicker">
+      <span class="chapter">第三章 · 曝光与色彩</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>第六课</span>
+      <span class="en">Lesson 06</span>
+    </p>
+    <h1 class="lesson-title">画质与风格：胶片模拟与拍摄菜单</h1>
+    <p class="lesson-summary">这是 X-S20 最值钱的一课。我们要把「图像质量设置」和「拍摄设置」两个菜单逐项过完：胶片模拟全 19 种怎么选、白平衡怎么微调、动态范围与 D 范围优先级什么时候用、颗粒和色调曲线怎么调出胶片味。学完你会拥有<b>风光</b>和<b>人像</b>两套完整配方。</p>
+    <dl class="lesson-meta">
+      <div><dt>课时长度</dt><dd>约 90 分钟</dd></div>
+      <div><dt>难度</dt><dd>进阶</dd></div>
+      <div><dt>教具</dt><dd>X-S20 · 一支镜头 ·（可选）灰卡或白纸</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="lesson" id="main">
+  <div class="lesson-body">
+
+    <!-- Ⅰ 本课目标 -->
+    <section class="sec" aria-labelledby="sec-goals">
+      <h3 class="sec-head" id="sec-goals"><span class="mark">Ⅰ</span> 本课目标<span class="note">Objectives</span></h3>
+      <ol class="objectives od-stack">
+        <li class="objective"><span class="idx">01</span><span class="txt">定好图像尺寸、图像质量与 RAW 录制策略（含无损压缩的取舍）</span></li>
+        <li class="objective"><span class="idx">02</span><span class="txt">说出 19 种胶片模拟的取向，并为风光 / 人像各选出主用与备选</span></li>
+        <li class="objective"><span class="idx">03</span><span class="txt">掌握白平衡的自动三兄弟、自定义测量与色温 K 值微调</span></li>
+        <li class="objective"><span class="idx">04</span><span class="txt">分清动态范围与 D 范围优先级，会用色调曲线压高光提阴影</span></li>
+        <li class="objective"><span class="idx">05</span><span class="txt">配好「拍摄设置」里的防抖、快门类型、间隔定时、自拍与预拍摄</span></li>
+        <li class="objective"><span class="idx">06</span><span class="txt">把风光与人像两套完整配方存进 C1 / C2</span></li>
+      </ol>
+      <ul class="gear od-cluster" aria-label="本课教具">
+        <li class="tag">X-S20</li>
+        <li class="tag">一支镜头</li>
+        <li class="tag">白纸或灰卡（自定义白平衡用）</li>
+      </ul>
+    </section>
+
+    <!-- Ⅱ 图像尺寸与质量 -->
+    <section class="sec" aria-labelledby="sec-size">
+      <h3 class="sec-head" id="sec-size"><span class="mark">Ⅱ</span> 图像尺寸、质量与 RAW<span class="note">Size &amp; Quality</span></h3>
+      <p class="sec-lead">路径：<b>拍摄菜单 &gt; 图像质量设置</b>。先把这个菜单的 24 项列出来，你才知道自己要管的东西有多少。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">图像质量设置菜单全项（24 项）</p>
+        <p>图像尺寸 · 图像质量 · RAW 录制 · 选择 JPEG/HEIF · 胶片模拟 · 黑白 · 颗粒效果 · 色彩效果 · 彩色 FX 蓝色 · 白平衡 · 动态范围 · D 范围优先级 · 色调曲线 · 色彩 · 锐度 · 高 ISO 降噪 · 清晰度 · 长时间曝光降噪 · 镜头调整优化器 · 色彩空间 · 像素映射 · 编辑/保存自定义设置 · 自动更新自定义设置 · 自定义模式设定 · 转接环设置</p>
+      </div>
+
+      <table class="tbl">
+        <thead><tr><th>图像尺寸</th><th>3:2</th><th>1:1</th><th>16:9</th></tr></thead>
+        <tbody>
+          <tr><td><b>L</b></td><td>6240 × 4160</td><td>4160 × 4160</td><td>6240 × 3512</td></tr>
+          <tr><td><b>M</b></td><td>4416 × 2944</td><td>2944 × 2944</td><td>4416 × 2488</td></tr>
+          <tr><td><b>S</b></td><td>3120 × 2080</td><td>2080 × 2080</td><td>3120 × 1760</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);">运动取景器模式或 1.25× 裁切时，只有 M 尺寸可用（4992×3328 等）。<b>图像尺寸关机或换模式都不会重设</b>，注意别在不知情时一直用 S 拍风光。</p>
+
+      <table class="tbl" style="margin-top: var(--s5);">
+        <thead><tr><th>图像质量</th><th>产出</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td>FINE</td><td>低压缩率高质量 JPEG/HEIF</td><td>直出就交片时用</td></tr>
+          <tr><td>NORMAL</td><td>高压缩率、张数更多</td><td>记录性拍摄</td></tr>
+          <tr><td><b>FINE+RAW</b></td><td>RAW + 高质量副本</td><td><b>风光标准配置</b>：直出可用 + 后期有余量</td></tr>
+          <tr><td>NORMAL+RAW</td><td>RAW + 标准副本</td><td>容量紧张时</td></tr>
+          <tr><td>RAW</td><td>仅 RAW</td><td>完全后期流程</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> RAW 录制：三种压缩</h4>
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>体积</th><th>质量</th><th>兼容性</th></tr></thead>
+        <tbody>
+          <tr><td>未压缩</td><td>最大</td><td>原始</td><td>最广</td></tr>
+          <tr><td><b>无损压缩</b></td><td>约 30%–90%</td><td><b>与未压缩相同</b></td><td>需 Capture One / SILKYPIX / X RAW STUDIO 等支持</td></tr>
+          <tr><td>压缩（有损）</td><td>约 25%–35%</td><td>大致相同</td><td>最广</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);"><b>结论：用无损压缩。</b>体积省一半以上、画质不掉，代价只是需要较新的软件。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> JPEG 还是 HEIF</h4>
+      <p class="sec-lead">HEIF 压缩效率高、体积小，但<b>查看与分享的选项有限</b>：选 HEIF 会强制关闭「清晰度」并把色彩空间锁为 sRGB；滤镜、全景、多重曝光、HDR 拍摄时也会自动回退到 JPEG。文件扩展名是 <code>.HIF</code>，在电脑上查看前要改成 <code>.HEIC</code>（用 USB 上传到电脑时相机会自动处理）。<b>除非你有明确的 HEIF 工作流，否则用 JPEG。</b></p>
+
+      <div class="callout-box">
+        <p class="callout-title">一个立刻能用的快捷键</p>
+        <p>把 <b>RAW</b> 指派给一个功能按钮：按一次在「当前质量」与「+RAW」之间切换，再按一次还原。这样平时只拍 JPEG，遇到好光线一按就多存一份 RAW，不用进菜单。</p>
+      </div>
+    </section>
+
+    <!-- Ⅲ 胶片模拟 -->
+    <section class="sec" aria-labelledby="sec-film">
+      <h3 class="sec-head" id="sec-film"><span class="mark">Ⅲ</span> 胶片模拟：19 种色彩哲学<span class="note">Film Simulation</span></h3>
+      <p class="sec-lead">这是富士的招牌。它不是滤镜，而是<b>从色彩映射到对比曲线的完整成像配方</b>。下面按「彩色 → 黑白 → 特殊」分组，帮你快速建立选择体系。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">1</span> 彩色：标准与风光</h4>
+      <table class="tbl">
+        <thead><tr><th>模式</th><th>性格</th><th>风光适配</th><th>人像适配</th></tr></thead>
+        <tbody>
+          <tr><td><b>PROVIA / 标准</b></td><td>均衡、通用</td><td>★★★★ 默认首选</td><td>★★★ 纪实</td></tr>
+          <tr><td><b>Velvia / 鲜艳</b></td><td>高饱和高对比，蓝天绿地极艳</td><td>★★★★★ 日出日落、秋色</td><td>★ 肤色偏红，慎用</td></tr>
+          <tr><td><b>ASTIA / 柔和</b></td><td>柔对比、肤色讨喜</td><td>★★★ 阴天、柔光</td><td>★★★★★ 人像首选</td></tr>
+          <tr><td><b>CLASSIC CHROME</b></td><td>暗部浓、高光柔，安静的画面</td><td>★★★★ 城市、雾景、纪实风光</td><td>★★★ 文艺感</td></tr>
+          <tr><td><b>REALA ACE</b></td><td>忠实还原 + 硬调</td><td>★★★★ 建筑、需要准确的场景</td><td>★★★★ 通用</td></tr>
+          <tr><td>PRO Neg. Hi</td><td>对比稍高的肖像向</td><td>★★</td><td>★★★★ 棚拍感</td></tr>
+          <tr><td>PRO Neg. Std</td><td>中性、渐变柔和，最适合后期</td><td>★★★</td><td>★★★★★ 需要调色时</td></tr>
+          <tr><td>经典 Neg.</td><td>硬调 + 色彩加深，胶片味浓</td><td>★★★★ 街拍、旧城</td><td>★★★</td></tr>
+          <tr><td>NOSTALGIC Neg.</td><td>琥珀高光 + 浓郁阴影</td><td>★★★★★ 暖调风光、老电影感</td><td>★★★★ 暖光人像</td></tr>
+          <tr><td><b>ETERNA / 影院</b></td><td>柔色彩 + 丰富阴影，电影感</td><td>★★★★ 阴雨、雾、视频</td><td>★★★★ 柔光人像</td></tr>
+          <tr><td>ETERNA BLEACH BYPASS</td><td>低饱和高对比，独特</td><td>★★★★ 荒凉、工业风</td><td>★★</td></tr>
+          <tr><td>a 自动</td><td>按场景自动选</td><td colspan="2">仅模式拨盘在 AUTO 时可用</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">2</span> 黑白：ACROS 与 黑白</h4>
+      <p class="sec-lead"><b>ACROS</b> 是富士的招牌黑白：细节丰富、锐度高、颗粒极细，适合风光与建筑；<b>黑白</b>则更「传统」。两者都可叠加<b>黄 / 红 / 绿滤镜</b>，作用和你熟悉的黑白滤镜一样：</p>
+      <table class="tbl">
+        <thead><tr><th>滤镜</th><th>效果</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td>+ 黄（Ye）</td><td>略增对比、稍暗化天空</td><td>风光万金油</td></tr>
+          <tr><td>+ 红（R）</td><td>强对比、天空大幅压暗</td><td>表现云层与戏剧性天空</td></tr>
+          <tr><td>+ 绿（G）</td><td>肤色更讨喜</td><td>黑白人像</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);">另有<b>棕褐色</b>（sepia）与「<b>黑白</b>」颜色微调（在 WARM–COOL 与 G–M 轴上偏红或偏蓝，也就是暖调/冷调黑白）。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">3</span> 风格调味四件套</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>加重的后果</th></tr></thead>
+        <tbody>
+          <tr><td><b>颗粒效果</b></td><td>粗糙度：强 / 弱 / 关；尺寸：大 / 小</td><td>更有胶片颗粒感，但细节被盖住；风光慎开强</td></tr>
+          <tr><td><b>色彩效果</b></td><td>强 / 弱 / 关</td><td>红、黄、绿等高饱和色更立体，容易过艳</td></tr>
+          <tr><td><b>彩色 FX 蓝色</b></td><td>强 / 弱 / 关</td><td>蓝天、海水的蓝更深邃——<b>风光利器</b></td></tr>
+          <tr><td><b>色调曲线</b></td><td>高光 −2~+4、阴影 −2~+4</td><td>上调=对比更硬；下调=更平滑。高光 −1 / 阴影 −1 是「保细节」常用组合</td></tr>
+        </tbody>
+      </table>
+
+      <figure class="figure" style="margin-top: var(--s5);">
+        <div class="img-frame"><img src="../assets/images/osd_mn_sm_mono_color_x-s20_zhs.png" alt="黑白颜色微调界面" loading="lazy" /></div>
+        <figcaption class="figcap"><b>图 1</b> 黑白的暖冷 / 绿洋红微调界面（官方插图）。来源：<a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/image_quality_setting/">官方说明书《图像质量设置》</a>。</figcaption>
+      </figure>
+
+      <div class="callout-box">
+        <p class="callout-title">别忘了 Fn 拨盘</p>
+        <p>第 1 课讲过：<b>Fn 拨盘出厂默认就是胶片模拟</b>。所以换胶片模拟最快的方式不是进菜单，而是转那颗拨盘——一边转一边看屏幕，这是富士最舒服的创作节奏。</p>
+      </div>
+    </section>
+
+    <!-- Ⅳ 白平衡 -->
+    <section class="sec" aria-labelledby="sec-wb">
+      <h3 class="sec-head" id="sec-wb"><span class="mark">Ⅳ</span> 白平衡：从自动到自定义<span class="note">White Balance</span></h3>
+      <p class="sec-lead">除了常规的日光 / 阴天 / 荧光灯 / 白炽灯，富士有几个不太一样的自动档，值得分清。</p>
+
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>取向</th><th>什么时候用</th></tr></thead>
+        <tbody>
+          <tr><td><b>自动</b></td><td>中性自动</td><td>默认</td></tr>
+          <tr><td><b>W A 白色优先</b></td><td>白炽灯下也把白拍成<b>亮白</b></td><td>室内暖光下不想让照片发黄</td></tr>
+          <tr><td><b>A A 环境优先</b></td><td>保留现场<b>暖调氛围</b></td><td>餐厅、咖啡馆、黄昏，想留住暖光</td></tr>
+          <tr><td><b>k / l / m 自定义 1–3</b></td><td>用白纸或灰卡实测</td><td>混色光、产品、接片需一致色彩</td></tr>
+          <tr><td><b>k 色温（2500–10000 K）</b></td><td>手动指定色温</td><td>精确控色；也可<b>故意</b>偏暖偏冷创作</td></tr>
+          <tr><td>日光 / 阴天 / 荧光灯 1–3 / 白炽灯</td><td>固定预设</td><td>光源明确且稳定时</td></tr>
+          <tr><td>g 潜水</td><td>去除水下蓝调</td><td>水下拍摄</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">附</span> 微调与自定义测量</h4>
+      <p class="sec-lead">选中任一白平衡后<b>按 MENU/OK</b> 会进入微调对话框，用对焦棒在红-青、蓝-黄两轴上偏移；不想微调就按 DISP/BACK 直接退出。</p>
+      <p class="sec-lead">自定义测量的操作：选 <b>k/l/m</b> → 屏幕出现白平衡目标框 → 调整框的位置与大小让它<b>充满参照物</b> → 完全按下快门测量。显示「完成！」后按 MENU/OK 确认。若提示「过暗」，先提高曝光补偿再测；「过亮」则降低。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_wb_select_x-s20_zhs.png" alt="白平衡选项列表" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 2</b> 白平衡选项列表。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_wb_shift_x-s20_zhs.png" alt="白平衡微调对话框" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 3</b> 微调对话框：两轴偏移。</figcaption>
+        </figure>
+      </div>
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_wb_custom01_x-s20_zhs.png" alt="自定义白平衡测量界面" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 4</b> 自定义白平衡：目标框对准参照物。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_wb_k_x-s20_zhs.png" alt="色温 K 值设定" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 5</b> 色温：2500–10000 K，可按 10 K 微增。</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout-box">
+        <p class="callout-title">两个实战技巧</p>
+        <ul>
+          <li><b>故意偏色</b>：拍日落时把白平衡固定为「日光」，画面会比自动更暖更艳；拍雪景固定「阴天」可避免雪发灰。自动白平衡会「纠正」掉你想要的气氛。</li>
+          <li><b>闪光与白平衡</b>：只有自动、白 A、环境 A、潜水这几个模式会根据闪光灯光线调整白平衡；用其他固定白平衡时请关闭闪光灯。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅴ 动态范围 -->
+    <section class="sec" aria-labelledby="sec-dr">
+      <h3 class="sec-head" id="sec-dr"><span class="mark">Ⅴ</span> 动态范围 与 D 范围优先级<span class="note">DR &amp; D-Range Priority</span></h3>
+      <p class="sec-lead">这两个名字很像，作用也不同：<b>动态范围</b>只管高光；<b>D 范围优先级</b>同时管高光和阴影。</p>
+
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="3"><b>动态范围</b></td><td>自动</td><td>按场景自动在 100% 与 200% 之间选；半按时才显示实际快门光圈</td></tr>
+          <tr><td>100%</td><td>对比度更高，高光容易死</td></tr>
+          <tr><td><b>200% / 400%</b></td><td>减少高光细节丢失。<b>DR200 需 ISO ≥ 320，DR400 需 ISO ≥ 640</b></td></tr>
+          <tr><td rowspan="4"><b>D 范围优先级</b></td><td>关</td><td>关闭</td></tr>
+          <tr><td>弱</td><td>对比稍高场景做少量调整（ISO ≥ 320）</td></tr>
+          <tr><td><b>强</b></td><td>极高对比场景大量调整（ISO ≥ 640）</td></tr>
+          <tr><td>自动</td><td>相机按光线自动决定</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">重要联动：开了 D 范围优先级就动不了色调曲线</p>
+        <p>只要 D 范围优先级不是「关」，<b>色调曲线与动态范围都会被自动调整</b>，你手动改它们无效。想自己控曲线，就必须把它设为关。另外高值档位（DR400、强）可能<b>增加斑点</b>，别一味拉满。</p>
+      </div>
+
+      <p class="sec-lead" style="margin-top: var(--s4);">风光配方的建议：<b>白天高反差 → DR200；正午强光 → DR400 或 D 范围优先级弱；日出日落 → DR100 保对比</b>。注意 DR200/DR400 会抬高最低 ISO，这会影响你在弱光下的快门。</p>
+    </section>
+
+    <!-- Ⅵ 拍摄设置 -->
+    <section class="sec" aria-labelledby="sec-shootset">
+      <h3 class="sec-head" id="sec-shootset"><span class="mark">Ⅵ</span> 拍摄设置：19 项里只有 6 项天天用<span class="note">Shooting Setting</span></h3>
+      <p class="sec-lead">路径：<b>拍摄菜单 &gt; 拍摄设置</b>。全景 19 项如下，但真正影响你出片的是防抖、快门类型、间隔定时、自拍、预拍摄与减少闪烁。</p>
+
+      <div class="callout-box">
+        <p class="callout-title">拍摄设置菜单全项</p>
+        <p>自动模式设置 · 滤镜设置 · 运动取景器模式 · 预拍摄 · 自拍 · 保存自拍设置 · 自拍灯 · AE 连拍设置 · 胶片模拟包围 · 对焦包围设定 · 测光 · 快门类型 · 间隔定时拍摄 · 间隔定时拍摄平滑曝光 · 间隔拍摄优先模式 · 减少闪烁 · 无闪烁快门速度设定 · 防抖模式 · ISO · 冷却风扇设定</p>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s4); font-size: 14px;"><span class="mark">A</span> 防抖模式（风光必设）</h4>
+      <table class="tbl">
+        <thead><tr><th>选项</th><th>行为</th><th>场景</th></tr></thead>
+        <tbody>
+          <tr><td><b>连续</b></td><td>一直开启防抖</td><td>手持走拍、Vlog</td></tr>
+          <tr><td><b>拍摄 + 动像</b></td><td>同上，且检测到运动物体时自动提速快门</td><td>抓拍人/宠物</td></tr>
+          <tr><td><b>仅拍摄时</b></td><td>只在半按或释放时防抖</td><td>省电、取景时画面更稳</td></tr>
+          <tr><td><b>关</b></td><td>关闭防抖</td><td><b>三脚架必选此项</b>，否则防抖反而引入模糊</td></tr>
+        </tbody>
+      </table>
+      <p class="sec-lead" style="margin-top: var(--s3);">「+动像」在 ISO 固定时不起作用；镜头上有防抖开关时，<b>镜头开关优先</b>于菜单设置。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">B</span> 间隔定时拍摄（延时摄影）</h4>
+      <div class="steps-widget">
+        <ol class="steps od-stack" id="step-list">
+          <li class="step" id="step-1">
+            <label class="step-main" for="step-1">
+              <input class="step-input" type="checkbox" id="step-1" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">01</span>
+              <span class="step-body">
+                <span class="step-title">选择定时器来源</span>
+                <span class="step-text">拍摄设置 &gt; 间隔定时拍摄 → <b>使用相机机内定时器</b>（用遥控快门自带定时器则选「使用外部定时器」）。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-2">
+            <label class="step-main" for="step-2">
+              <input class="step-input" type="checkbox" id="step-2" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">02</span>
+              <span class="step-body">
+                <span class="step-title">设定间隔与张数</span>
+                <span class="step-text">用对焦棒选「间隔」与「张数」→ MENU/OK。张数设为 <b>∞</b> 时会一直拍到卡满。</span>
+              </span>
+            </label>
+          </li>
+          <li class="step" id="step-3">
+            <label class="step-main" for="step-3">
+              <input class="step-input" type="checkbox" id="step-3" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">03</span>
+              <span class="step-body">
+                <span class="step-title">设定开始时间并开拍</span>
+                <span class="step-text">选开始时间 → MENU/OK，拍摄自动开始。<b>建议三脚架 + AC-5VJ 电源适配器</b>。</span>
+              </span>
+            </label>
+            <figure class="step-figure">
+              <div class="img-frame"><img src="../assets/images/osd_mn_sm_interval-timer_x-s20_zhs.png" alt="间隔定时拍摄设定界面" loading="lazy" /></div>
+              <figcaption class="figcap"><b>图 6</b> 间隔定时拍摄设定（官方插图）。</figcaption>
+            </figure>
+          </li>
+          <li class="step" id="step-4">
+            <label class="step-main" for="step-4">
+              <input class="step-input" type="checkbox" id="step-4" />
+              <span class="step-box" aria-hidden="true"></span>
+              <span class="step-num">04</span>
+              <span class="step-body">
+                <span class="step-title">开启曝光平滑（光变场景必做）</span>
+                <span class="step-text">「<b>间隔定时拍摄平滑曝光</b>」设为开，可防止两次拍摄之间曝光跳变。亮度变化剧烈时把间隔设短一些；<b>M 档下只有 ISO 为自动时才生效</b>。另有「间隔拍摄优先模式」会在必要时提速快门，保证曝光不长于间隔。</span>
+              </span>
+            </label>
+          </li>
+        </ol>
+        <div class="steps-progress">
+          <p class="progress-count"><span class="progress-hint">步骤进度</span><span class="val">0 / 4 步</span></p>
+          <div class="progress-track" aria-hidden="true"><span class="progress-fill"></span></div>
+          <p class="steps-done" hidden>全部步骤已标记完成。</p>
+        </div>
+      </div>
+      <p class="sec-lead" style="margin-top: var(--s4);">拍摄期间屏幕会在两次拍摄之间关闭、下一张前几秒亮起，指示灯闪绿。按回放按钮可中途查看已拍照片（再按一次返回）。B 门与多重曝光时不可用；连拍模式下每次快门只拍 1 张。</p>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">C</span> 自拍、快门类型与减少闪烁</h4>
+      <table class="tbl">
+        <thead><tr><th>项目</th><th>选项</th><th>要点</th></tr></thead>
+        <tbody>
+          <tr><td>自拍</td><td>2 秒 / 10 秒 / 关</td><td>2 秒用来消除按快门的震动；10 秒自拍入镜。<b>关机后自动关闭</b>，除非把「保存自拍设置」设为开</td></tr>
+          <tr><td>自拍灯</td><td>开 / 关</td><td>拍夜景或不想引人注目时关掉</td></tr>
+          <tr><td>快门类型</td><td>机械 / 电子 / 机械+电子</td><td>电子快门优点缺点见第 5 课那张表；静音拍摄请尊重肖像权</td></tr>
+          <tr><td>减少闪烁</td><td>所有帧 / 第一帧 / 关</td><td>荧光灯下减少横纹；<b>用电子快门时必须设为关</b></td></tr>
+          <tr><td>无闪烁快门速度</td><td>开 / 关</td><td>仅在 S / M 档有效，细调快门避开 LED 频闪</td></tr>
+          <tr><td>运动取景器模式</td><td>开（1.29× 裁切）/ 关</td><td>拍运动、飞鸟时让主体更大；此时图像尺寸固定为 M</td></tr>
+        </tbody>
+      </table>
+
+      <div class="fig-row" style="--fig-cols: 2; margin-top: var(--s4);">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_self-timer01_x-s20.png" alt="自拍倒计时显示" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 7</b> 自拍倒计时。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_sm_crop_mode_129x.png" alt="运动取景器 1.29 倍裁切" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 8</b> 运动取景器模式的 1.29× 裁切框。</figcaption>
+        </figure>
+      </div>
+
+      <h4 class="sec-head" style="margin-top: var(--s5); font-size: 14px;"><span class="mark">D</span> 转接环设置（玩手动老镜头才需要）</h4>
+      <p class="sec-lead">通过 M 卡口适配器接第三方镜头时可用，可存 6 支镜头的设定：<b>焦距设置</b>（影响防抖与 EXIF）、<b>畸变校正</b>（强/中/弱，修桶形或枕形）、<b>色差校正</b>（四角分别调明暗与青-红、蓝-黄轴）、<b>周边亮度校正</b>（−5~+5，老镜头建议正值）、<b>编辑镜头名称</b>。校正量建议对着蓝天或灰纸调。</p>
+    </section>
+
+    <!-- Ⅶ 两套配方 -->
+    <section class="sec" aria-labelledby="sec-recipe">
+      <h3 class="sec-head" id="sec-recipe"><span class="mark">Ⅶ</span> 交付：风光与人像两套配方<span class="note">Recipes</span></h3>
+      <p class="sec-lead">把这一课所有知识点收成两张表。照抄进 C1 与 C2（第 3 课的保存流程），你就有了两套「拨一下就到」的完整方案。</p>
+
+      <div class="fig-row" style="--fig-cols: 2">
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab-iq03_x-s20_zhs.png" alt="图像质量设置选项卡" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 9</b> 图像质量设置选项卡（配方主战场）。</figcaption>
+        </figure>
+        <figure class="figure">
+          <div class="img-frame"><img src="../assets/images/osd_mn_sm_tab-shooting_x-s20_zhs.png" alt="拍摄设置选项卡" loading="lazy" /></div>
+          <figcaption class="figcap"><b>图 10</b> 拍摄设置选项卡。</figcaption>
+        </figure>
+      </div>
+
+      <table class="tbl" style="margin-top: var(--s5);">
+        <thead><tr><th>项目</th><th>C1 · 风光</th><th>C2 · 人像</th></tr></thead>
+        <tbody>
+          <tr><td>模式</td><td>A（光圈优先）</td><td>A（大光圈）</td></tr>
+          <tr><td>ISO</td><td>自动1（上限 800，最低快门 1/125）</td><td>自动2（上限 3200）</td></tr>
+          <tr><td>测光</td><td>多重（逆光切点测 + AEL）</td><td>多重 + 脸部识别</td></tr>
+          <tr><td>对象检测 / 脸部识别</td><td>全部关</td><td>脸部识别开 + 眼睛识别自动</td></tr>
+          <tr><td>图像质量</td><td>FINE+RAW（无损压缩）</td><td>FINE（需要时临时加 RAW）</td></tr>
+          <tr><td>胶片模拟</td><td>Velvia（日出日落）/ NOSTALGIC Neg.（暖调）</td><td>ASTIA / PRO Neg. Std</td></tr>
+          <tr><td>动态范围</td><td>DR200（强光 DR400）</td><td>DR100 / 自动</td></tr>
+          <tr><td>D 范围优先级</td><td>关（想自己控曲线）</td><td>关</td></tr>
+          <tr><td>色调曲线</td><td>高光 −1、阴影 −1（保细节）</td><td>高光 −1、阴影 0</td></tr>
+          <tr><td>色彩 / 锐度</td><td>+1 / 0</td><td>0 / −1（柔化皮肤）</td></tr>
+          <tr><td>彩色 FX 蓝色</td><td><b>强</b></td><td>关</td></tr>
+          <tr><td>颗粒效果</td><td>弱 / 小（可选，做胶片感时开）</td><td>关</td></tr>
+          <tr><td>白平衡</td><td>自动，日落时固定「日光」</td><td>自动 / 环境优先 A</td></tr>
+          <tr><td>防抖</td><td>上架时<b>关</b>，手持时连续</td><td>连续</td></tr>
+          <tr><td>快门类型</td><td>机械+电子</td><td>机械（要闪光）/ 电子（要静音）</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p class="callout-title">配方的意义不是「永远这样拍」</p>
+        <p>它是<b>默认起点</b>。到了现场你仍然会改曝光补偿、改 ISO、临时换胶片模拟——但因为起点是对的，你改的只是两三处，而不是从零开始配。这就是 C1 / C2 相对 Q 菜单的价值。</p>
+      </div>
+    </section>
+
+    <!-- Ⅷ 迁移提示 -->
+    <section class="sec" aria-labelledby="sec-migrate">
+      <h3 class="sec-head" id="sec-migrate"><span class="mark">Ⅷ</span> 迁移提示<span class="note">From Sony / Canon</span></h3>
+      <div class="callout-box">
+        <p class="callout-title">画质与色彩，和索尼 / 佳能最不一样的 5 点</p>
+        <ul>
+          <li><b>胶片模拟是核心资产</b>，不是「创意风格」那种附属品。索尼的 Creative Look / 佳能的照片风格都更偏后期起点，富士是直接当成品用。</li>
+          <li><b>Fn 拨盘 = 换胶片模拟</b>：不需要进菜单，转动即可，还能实时看到效果。</li>
+          <li><b>白平衡有「白色优先 / 环境优先」两档</b>：这是富士特有，解决「室内要不要保留暖光」这个长期争论。</li>
+          <li><b>动态范围绑定 ISO 下限</b>：DR200 要 ISO 320、DR400 要 ISO 640。索尼的 DRO 不这么绑。</li>
+          <li><b>D 范围优先级一开，色调曲线就锁死</b>：两者互斥，容易让人以为「曲线调了没反应」。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ⅸ 课后练习 -->
+    <section class="sec" aria-labelledby="sec-exercise">
+      <h3 class="sec-head" id="sec-exercise"><span class="mark">Ⅸ</span> 课后练习<span class="note">Exercise</span></h3>
+      <ol class="exercise-list od-stack">
+        <li class="exercise-item">
+          <span class="idx">01</span>
+          <span class="txt">选择：拍蓝天白云的风光，想让蓝色更深邃、云层更有层次，最该动哪两项？
+            <details class="answer"><summary>参考答案</summary><p>① <b>彩色 FX 蓝色</b> 设为强（加深蓝色调）；② 胶片模拟选 <b>Velvia / 鲜艳</b> 或 <b>NOSTALGIC Neg.</b>，配合色调曲线<b>高光 −1、阴影 −1</b> 保细节。若想更强的天空对比，可用 ACROS + 红滤镜拍黑白。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">02</span>
+          <span class="txt">判断：把 D 范围优先级设为「强」之后，仍可以手动调整色调曲线来控制高光和阴影。
+            <details class="answer"><summary>参考答案</summary><p>错误。D 范围优先级不是「关」时，<b>色调曲线与动态范围会被自动调整</b>，手动设置无效。想自己控曲线必须把它设为关。</p></details>
+          </span>
+        </li>
+        <li class="exercise-item">
+          <span class="idx">03</span>
+          <span class="txt">简答：室内咖啡馆拍人像，想保留暖黄的灯光氛围而不把画面「纠正」成冷白，白平衡怎么选？再想想如果反过来想要纯白背景呢？
+            <details class="answer"><summary>参考答案</summary><p>保留暖调 → 选 <b>A A 环境优先</b>；想要白背景不偏黄 → 选 <b>W A 白色优先</b>。若光源混色严重、需要绝对准确，则用<b>自定义白平衡</b>对着白纸测量。</p></details>
+          </span>
+        </li>
+      </ol>
+
+      <div class="callout-box">
+        <p class="callout-title">实拍小任务（这次的产出直接变成你的配方）</p>
+        <p>同一个场景（有蓝天 + 有绿植）连拍 4 张：PROVIA、Velvia、NOSTALGIC Neg.、ACROS。然后对其中你最喜欢的那张，微调「彩色 FX 蓝色 / 色调曲线」再拍一版。<b>把最终这一套存进 C1</b>，并给它改个名字（编辑自定义名），比如「风光·晴」。</p>
+      </div>
+    </section>
+
+    <!-- Ⅹ 出处与延伸 -->
+    <section class="sec" aria-labelledby="sec-sources">
+      <h3 class="sec-head" id="sec-sources"><span class="mark">Ⅹ</span> 出处与延伸<span class="note">Sources</span></h3>
+      <ul class="sources">
+        <li class="group-label">本课对应的官方说明书页面（主教材）</li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/image_quality_setting/">图像质量设置（静态摄影）</a> <span class="src-note">— 图像尺寸/质量、RAW 录制、JPEG/HEIF、胶片模拟、黑白、颗粒、色彩效果、彩色 FX 蓝色、白平衡、动态范围、D 范围优先级、色调曲线、色彩、锐度、降噪、清晰度、镜头优化器、色彩空间、像素映射、自定义设置、转接环</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/menu_shooting/shooting_setting/">拍摄设置（静态摄影）</a> <span class="src-note">— 自动模式、滤镜、运动取景器、预拍摄、自拍、AE 连拍、胶片模拟包围、对焦包围、测光、快门类型、间隔定时、减少闪烁、防抖、ISO、冷却风扇</span></li>
+        <li><a href="https://fujifilm-dsc.com/zhs/manual/x-s20/taking_photo/shooting_mode/">选择拍摄模式</a> <span class="src-note">— FILTER 滤镜档的 8 类滤镜效果</span></li>
+        <li class="group-label">版权说明</li>
+        <li class="src-note">本课插图均取自 FUJIFILM 官方在线说明书，© FUJIFILM Corporation，仅用于个人学习。</li>
+      </ul>
+      <div class="callout-box">
+        <p class="callout-title">学习提醒</p>
+        <p>到这里，「拍照」这条线已经完整了：从装配、曝光、对焦到风格。下一课转攻<b>视频</b>——从随手 Vlog 到 F-Log 专业流程，这是 X-S20 的另一半本事。</p>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="课时切换">
+      <a class="pager-btn" href="0005-jinjie-paifa.html">
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <span>
+          <span class="pager-label">上一课</span>
+          <span class="pager-title">第五课 · 进阶拍摄技法：风光利器与闪光</span>
+        </span>
+      </a>
+      <span class="pager-btn" style="opacity:.4; cursor:default;" aria-disabled="true">
+        <span>
+          <span class="pager-label">下一课</span>
+          <span class="pager-title">第七课 · 视频完全指南（Vlog 重点课）（制作中）</span>
+        </span>
+        <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </span>
+    </nav>
+  </div>
+</main>
+
+<footer class="page-foot">
+  <div class="page-foot-inner">
+    <span class="mono">X-S20 · Operation Course · Lesson 06</span>
+    <span>内容依据富士官方在线说明书整理；插图 © FUJIFILM Corporation，仅用于个人学习。</span>
+  </div>
+</footer>
+
+<script src="../assets/lesson.js"></script>
+</body>
+</html>
