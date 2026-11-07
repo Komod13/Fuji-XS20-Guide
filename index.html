@@ -4,81 +4,185 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>X-S20 完全操作课程</title>
+<meta name="description" content="富士 X-S20 完全操作课程首页：9 课覆盖官方说明书 79 个内容页，从开箱到故障排除。">
 <meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="lessons/index.html">
 <link rel="stylesheet" href="assets/course.css">
 <style>
-  .entry {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: grid;
-    place-items: center;
-    padding: clamp(32px, 10vh, 96px) var(--gutter);
-    text-align: center;
+/* 首页专用样式：只含封面（cover）与目录（toc）。
+   颜色 token、字体栈、间距刻度、focus 样式、reduced-motion 全部取自 assets/course.css，
+   不要在这里重复定义 :root 变量。规则统一用 .home 作用域，避免与课程页组件撞名。 */
+
+body.home {
+  /* course.css 的 --gutter 为 clamp(20px, 4vw, 56px)；封面需要更宽的留白 */
+  --gutter: clamp(24px, 5vw, 64px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  border-top: 4px solid var(--line-strong);
+}
+
+/* ---------- 封面 ---------- */
+.home .cover {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: clamp(40px, 8vh, 88px) var(--gutter);
+}
+
+.home .cover-inner {
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+}
+
+/* ---------- 标题 ---------- */
+.home .title {
+  font-weight: 700;
+  animation: rise 300ms var(--ease) 60ms both;
+}
+
+.home .title-latin {
+  display: block;
+  /* 原先写在 HTML 里的 inline style 是 64px，这里原样保留视觉尺寸 */
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0.38em;
+  padding-left: 0.38em;
+  line-height: 1;
+  margin-bottom: clamp(10px, 1.4vh, 16px);
+}
+
+.home .title-cn {
+  display: block;
+  font-size: clamp(36px, 5.2vw, 64px);
+  line-height: 1.06;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- 目录 ---------- */
+.home .toc {
+  margin: clamp(32px, 5.5vh, 56px) auto 0;
+  width: 100%;
+  max-width: 560px;
+  text-align: left;
+  animation: rise 300ms var(--ease) 140ms both;
+}
+
+.home .toc a {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 16px;
+  align-items: baseline;
+  gap: 12px;
+  padding: 9px 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 180ms var(--ease);
+}
+
+.home .toc .no {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.home .toc .name {
+  font-size: 17px;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+
+.home .toc .arrow {
+  align-self: center;
+  width: 14px;
+  height: 1px;
+  background: currentColor;
+  position: relative;
+  opacity: 0;
+  transition: opacity 180ms var(--ease), transform 180ms var(--ease);
+}
+.home .toc .arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+
+@media (hover: hover) {
+  .home .toc a:hover { background: var(--panel); }
+  .home .toc a:hover .name { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  .home .toc a:hover .arrow { opacity: 1; transform: translateX(2px); }
+}
+
+.home .toc a:focus-visible { outline-offset: -2px; }
+
+/* ---------- 页脚 ---------- */
+.home .foot {
+  padding: 0 var(--gutter) clamp(18px, 3.4vh, 30px);
+  display: flex;
+  justify-content: center;
+}
+
+.home .foot-line {
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+  text-align: center;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 520px) {
+  .home .toc a { grid-template-columns: 28px minmax(0, 1fr) 14px; gap: 10px; padding: 9px 4px; }
+  .home .toc .name { font-size: 15.5px; }
+  .home .title-cn { font-size: clamp(30px, 9vw, 40px); }
+  .home .title-latin { letter-spacing: 0.3em; padding-left: 0.3em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home *, .home *::before, .home *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 1ms !important;
   }
-  .entry-inner { width: 100%; max-width: 560px; }
-  .entry-eyebrow {
-    font-size: var(--fs-xs);
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: var(--s4);
-  }
-  .entry-title {
-    font-size: clamp(28px, 4.4vw, 46px);
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    text-wrap: balance;
-  }
-  .entry-lede {
-    margin-top: var(--s3);
-    font-size: var(--fs-lead);
-    line-height: 1.5;
-    color: var(--ink-soft);
-  }
-  .entry-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6em;
-    margin-top: var(--s5);
-    padding: 10px 18px 10px 14px;
-    border: 1px solid var(--ink);
-    color: var(--ink);
-    font-size: var(--fs-xs);
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: color 160ms var(--ease), background-color 160ms var(--ease);
-  }
-  .entry-link .od-icon { --od-icon-size: 12px; }
-  .entry-foot {
-    margin-top: var(--s6);
-    font-size: var(--fs-xs);
-    letter-spacing: 0.12em;
-    color: var(--faint);
-  }
-  @media (hover: hover) {
-    .entry-link:hover { background: var(--ink); color: var(--paper); }
-  }
-  .entry-link:active { background: var(--ink); color: var(--paper); }
+}
 </style>
-<meta http-equiv="refresh" content="0; url=lessons/index.html">
 </head>
-<body>
-<main class="entry">
-  <div class="entry-inner">
-    <p class="entry-eyebrow">FUJIFILM X-S20 · Operation Course</p>
-    <h1 class="entry-title">X-S20 完全操作课程</h1>
-    <p class="entry-lede">9 课，从开箱到故障排除。</p>
-    <a class="entry-link" href="lessons/index.html">
-      <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="1.5" />
-      </svg>
-      <span>进入课程</span>
-    </a>
-    <p class="entry-foot">正在跳转…若未自动跳转，请点上方按钮。</p>
-  </div>
-</main>
+<body class="home">
+  <main class="cover">
+    <div class="cover-inner">
+
+      <h1 class="title">
+        <span class="title-latin">X-S20</span>
+        <span class="title-cn">完全操作课程</span>
+      </h1>
+
+      <ul class="toc">
+        <li><a href="lessons/0001-kaixiang-jishen-kaizhunbei.html"><span class="no">01</span><span class="name">开箱 · 认识机身 · 开机准备</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0002-kuaisu-shangshou.html"><span class="no">02</span><span class="name">快速上手：照片、视频与回放完全指南</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0003-baoguang-bopian-tixi.html"><span class="no">03</span><span class="name">曝光控制：富士拨盘操作体系</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0004-duijiao-xitong.html"><span class="no">04</span><span class="name">对焦系统：张张清晰</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0005-jinjie-paifa.html"><span class="no">05</span><span class="name">进阶拍摄技法：风光利器与闪光</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0006-huazhi-jiaopian-moniz.html"><span class="no">06</span><span class="name">画质与风格：胶片模拟与拍摄菜单</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0007-shipin-wanzheng-zhinan.html"><span class="no">07</span><span class="name">视频完全指南（Vlog 重点课）</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0008-caidan-lianjie.html"><span class="no">08</span><span class="name">菜单深度自定义与连接工作流</span><span class="arrow" aria-hidden="true"></span></a></li>
+        <li><a href="lessons/0009-peijian-baoyang-guzhang.html"><span class="no">09</span><span class="name">配件、保养与故障排除</span><span class="arrow" aria-hidden="true"></span></a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-line">Fujifilm X-S20 · Operation Course</p>
+  </footer>
+
 </body>
 </html>
